@@ -1,5 +1,3 @@
-# Thanks to: https://gist.github.com/jdbartlett/444295
-
 # Ignore everything in the root except the "wp-content" directory besides this file.../*
 
 !.gitignore
