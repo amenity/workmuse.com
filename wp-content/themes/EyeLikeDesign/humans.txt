@@ -1,0 +1,21 @@
+/* EyeLikeDesign is a responsive WordPress parent theme based on ZURB's Foundation. */
+
+/* TEAM */
+
+eyelikedesign Team
+http://eyelikedesign.com
+EyeLikeDesign: http://eyelikedesign.com
+
+/* THANKS */
+
+ZURB Foundation
+http://foundation.zurb.com/
+
+WordPress
+http://wordpress.org/
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, etc.
+CMS: WordPress

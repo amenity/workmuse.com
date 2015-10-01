@@ -1,0 +1,588 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EyeLikeDesign v1.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-02-15 12:10:39+0000\n"
+"Last-Translator: admin <fabrice@banquise.ch>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:19
+#@ eyelikedesign
+msgid "404 &ndash; What have you done? You broke the internet!"
+msgstr "404 &ndash; Qu'avez-vous fait ? Vous venez juste de casser internet !"
+
+#: 404.php:26
+#@ eyelikedesign
+msgid "The page you are looking for is gone. Perhaps searching or one of the links below will get you back on track."
+msgstr "La page que vous cherchez n'existe pas. Peut-être qu'une nouvelle recherche ou l'un des liens ci-dessous pourra vous aider. "
+
+#: 404.php:37
+#@ eyelikedesign
+msgid "Most Used Categories"
+msgstr "Catégories les plus utilisées"
+
+#: 404.php:45
+#@ eyelikedesign
+msgid "Try looking in the monthly archives."
+msgstr "Essayez les archives mensuelles"
+
+#: comments.php:16
+#@ eyelikedesign
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Cet article est protégé par un mot de passe. Veuillez saisir le mot de passe pour voir les commentaires."
+
+#: comments.php:32
+#, php-format
+#@ eyelikedesign
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Une pensée à propos de &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s pensées à propos de &ldquo;%2$s&rdquo;"
+
+#: comments.php:39
+#: comments.php:59
+#@ eyelikedesign
+msgid "Comment navigation"
+msgstr "Navigation des commentaires"
+
+#: comments.php:40
+#: comments.php:60
+#@ eyelikedesign
+msgid "&larr; Older Comments"
+msgstr "&larr; Commentaires précédents"
+
+#: comments.php:41
+#: comments.php:61
+#@ eyelikedesign
+msgid "Newer Comments &rarr;"
+msgstr "Commentaires plus récents &rarr;"
+
+#: comments.php:71
+#@ eyelikedesign
+msgid "Comments are closed."
+msgstr "Les commentaires sont désactivés."
+
+#: comments.php:76
+#@ eyelikedesign
+msgid "Leave a Reply"
+msgstr "Répondre"
+
+#: comments.php:76
+#, php-format
+#@ eyelikedesign
+msgid "Leave a Reply to %s"
+msgstr "Répondre à %s"
+
+#: comments.php:79
+#, php-format
+#@ eyelikedesign
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Vous devez être <a href=\"%s\">connecté</a> pour écrire un commentaire."
+
+#: comments.php:83
+#, php-format
+#@ eyelikedesign
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Connecté en tant que <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: comments.php:83
+#@ eyelikedesign
+msgid "Log out of this account"
+msgstr "Déconnexion"
+
+#: comments.php:83
+#@ eyelikedesign
+msgid "Log out &raquo;"
+msgstr "Déconnexion &raquo;"
+
+#: comments.php:86
+#@ eyelikedesign
+msgid "Name"
+msgstr "Nom"
+
+#: comments.php:86
+#: comments.php:90
+#@ eyelikedesign
+msgid " (required)"
+msgstr "(requis)"
+
+#: comments.php:90
+#@ eyelikedesign
+msgid "Email (will not be published)"
+msgstr "Email (ne sera pas publié)"
+
+#: comments.php:94
+#@ eyelikedesign
+msgid "Website"
+msgstr "Site web"
+
+#: comments.php:99
+#@ eyelikedesign
+msgid "Comment"
+msgstr "Commentaire"
+
+#: comments.php:102
+#@ eyelikedesign
+msgid "You can use these tags: "
+msgstr "Vous pouvez utiliser les tags suivants: "
+
+#: comments.php:103
+#@ eyelikedesign
+msgid "Submit Comment"
+msgstr "Envoyer votre commentaire"
+
+#: content-image.php:15
+#: content-link.php:15
+#: content-quote.php:14
+#: content-status.php:12
+#: content-status.php:17
+#: content.php:17
+#: content.php:25
+#, php-format
+#@ eyelikedesign
+msgid "Permalink to %s"
+msgstr "Lien à %s"
+
+#: content-image.php:15
+#@ eyelikedesign
+msgctxt "Post format title"
+msgid "Image"
+msgstr "Image"
+
+#: content-image.php:18
+#: content-link.php:18
+#: content-quote.php:17
+#: content-status.php:20
+#: content.php:35
+#@ eyelikedesign
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continuer la lecture <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-link.php:15
+#@ eyelikedesign
+msgctxt "Post format title"
+msgid "Link"
+msgstr "Lien"
+
+#: content-none.php:12
+#@ eyelikedesign
+msgid "Nothing Found"
+msgstr "Aucun résultat"
+
+#: content-none.php:16
+#@ eyelikedesign
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Toutes nos excuses: aucun résultats n'a été trouvé pour cette requête. Peut-être qu'une recherche vous aidera."
+
+#: content-page.php:16
+#: content.php:36
+#: image.php:89
+#@ eyelikedesign
+msgid "Pages:"
+msgstr "Pages:"
+
+#: content-quote.php:14
+#@ eyelikedesign
+msgctxt "Post format title"
+msgid "Quote"
+msgstr "Citation"
+
+#: content-status.php:17
+#@ eyelikedesign
+msgctxt "Post format title"
+msgid "Status"
+msgstr "Statuts"
+
+#: content.php:25
+#@ eyelikedesign
+msgctxt "Post format title"
+msgid "Featured"
+msgstr "Mis en avant"
+
+#. translators: used between list items, there is a space after the comma
+#: entry-meta.php:17
+#: entry-meta.php:27
+#@ eyelikedesign
+msgid ", "
+msgstr ", "
+
+#: entry-meta.php:21
+#, php-format
+#@ eyelikedesign
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr "<span class=\"%1$s\">Publié dans</span> %2$s"
+
+#: entry-meta.php:33
+#, php-format
+#@ eyelikedesign
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr "<span class=\"%1$s\">Taggé</span> %2$s"
+
+#: entry-meta.php:43
+#@ eyelikedesign
+msgid "Leave a reply"
+msgstr "Ecrire une réponse"
+
+#: entry-meta.php:43
+#@ eyelikedesign
+msgid "<b>1</b> Reply"
+msgstr "<b>1</b> Réponse"
+
+#: entry-meta.php:43
+#@ eyelikedesign
+msgid "<b>%</b> Replies"
+msgstr "<b>%</b> Réponses"
+
+#: entry-meta.php:52
+#: functions.php:494
+#, php-format
+#@ eyelikedesign
+msgid "About %s"
+msgstr "A propos de %s"
+
+#: entry-meta.php:56
+#, php-format
+#@ eyelikedesign
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Voir tous les articles de %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: footer.php:25
+#@ eyelikedesign
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:25
+#@ eyelikedesign
+msgid "Semantic Personal Publishing Platform"
+msgstr "Semantic Personal Publishing Platform"
+
+#: footer.php:25
+#, php-format
+#@ eyelikedesign
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: functions.php:92
+#@ eyelikedesign
+msgid "<p>This site runs on the <a href=\"http://themes.required.ch/\" title=\"eyelikedesign Themes\">EyeLikeDesign</a> Theme. Based on the awesome <a href=\"http://foundation.zurb.com/\" title=\"Rapid prototyping and building library from ZURB.\">Foundation</a> Framework by the humble folks at <a href=\"http://www.zurb.com/\" title=\"Design for people\">ZURB</a>.</p>"
+msgstr "<p>Ce site est basé sur <a href=\"http://themes.required.ch/\" title=\"eyelikedesign Themes\">EyeLikeDesign</a> thème. Lui-même basé sur l'incroyable <a href=\"http://foundation.zurb.com/\" title=\"Rapid prototyping and building library from ZURB.\">Foundation</a> Framework patiemment ciselé par la bande de <a href=\"http://www.zurb.com/\" title=\"Design for people\">ZURB</a>.</p>"
+
+#: functions.php:140
+#@ eyelikedesign
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:141
+#@ eyelikedesign
+msgid "Secondary Menu"
+msgstr "Menu secondaire"
+
+#: functions.php:182
+#, php-format
+#@ eyelikedesign
+msgid "Page %s"
+msgstr "Page %s"
+
+#: functions.php:205
+#@ eyelikedesign
+msgid "&hellip; Continue reading &rarr;"
+msgstr "&hellip; Continuer la lecture &rarr;"
+
+#: functions.php:237
+#@ eyelikedesign
+msgid "Main Sidebar"
+msgstr "Barre latérale principale"
+
+#: functions.php:246
+#@ eyelikedesign
+msgid "Footer Area One"
+msgstr "Zone de pied de page Une"
+
+#: functions.php:248
+#: functions.php:258
+#: functions.php:268
+#@ eyelikedesign
+msgid "An optional widget area for your site footer"
+msgstr "Une zone optionnelle de widget pour le pied de page de votre site"
+
+#: functions.php:256
+#@ eyelikedesign
+msgid "Footer Area Two"
+msgstr "Zone de pied de page Deux"
+
+#: functions.php:266
+#@ eyelikedesign
+msgid "Footer Area Three"
+msgstr "Zone de pied de page Trois"
+
+#: functions.php:285
+#@ eyelikedesign
+msgid "Post navigation"
+msgstr "Navigation pour les articles"
+
+#: functions.php:351
+#@ eyelikedesign
+msgid "Pingback:"
+msgstr "Rétrolien:"
+
+#: functions.php:351
+#: functions.php:385
+#@ eyelikedesign
+msgid "Edit"
+msgstr "Modifier"
+
+#. translators: 1: comment author, 2: date and time
+#: functions.php:366
+#, php-format
+#@ eyelikedesign
+msgid "<h6>%1$s on %2$s <span class=\"says\">said:</span></h6>"
+msgstr "<h6>%1$s le %2$s <span class=\"says\">a écrit:</span></h6>"
+
+#. translators: 1: date, 2: time
+#: functions.php:372
+#, php-format
+#@ eyelikedesign
+msgid "%1$s at %2$s"
+msgstr "%1$s à %2$s"
+
+#: functions.php:380
+#@ eyelikedesign
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en phase de modération."
+
+#: functions.php:388
+#@ eyelikedesign
+msgid "Reply <span>&darr;</span>"
+msgstr "Répondre <span>&darr;</span>"
+
+#: functions.php:406
+#, php-format
+#@ eyelikedesign
+msgid "<h6>Posted by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span> on <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a></h6>"
+msgstr "<h6>Publié par <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span> le <a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a></h6>"
+
+#: functions.php:412
+#, php-format
+#@ eyelikedesign
+msgid "View all posts by %s"
+msgstr "Voir tous les articles publiés par %s"
+
+#: functions.php:459
+#, php-format
+#@ eyelikedesign
+msgid "Category Archives: %s"
+msgstr "Archive de catégorie: "
+
+#: functions.php:474
+#, php-format
+#@ eyelikedesign
+msgid "Tag Archives: %s"
+msgstr "Archive de mot-clé: %s"
+
+#: functions.php:489
+#: functions.php:500
+#, php-format
+#@ eyelikedesign
+msgid "Author Archives: %s"
+msgstr "Archive de l'auteur: %s"
+
+#: functions.php:508
+#, php-format
+#@ eyelikedesign
+msgid "Daily Archives: %s"
+msgstr "Archive journalière: %s"
+
+#: functions.php:510
+#, php-format
+#@ eyelikedesign
+msgid "Monthly Archives: %s"
+msgstr "Archive mensuelle: %s"
+
+#: functions.php:510
+#@ eyelikedesign
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: functions.php:512
+#, php-format
+#@ eyelikedesign
+msgid "Yearly Archives: %s"
+msgstr "Archive annuelle: %s"
+
+#: functions.php:512
+#@ eyelikedesign
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: functions.php:514
+#@ eyelikedesign
+msgid "Blog Archives"
+msgstr "Archives du blog"
+
+#: functions.php:522
+#, php-format
+#@ eyelikedesign
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour: %s"
+
+#: image.php:25
+#, php-format
+#@ eyelikedesign
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr "<span class=\"meta-prep meta-prep-entry-date\">Publié </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> le <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> dans <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+
+#: image.php:40
+#@ eyelikedesign
+msgid "Image navigation"
+msgstr "Navigation pour les images"
+
+#: image.php:41
+#@ eyelikedesign
+msgid "&larr; Previous"
+msgstr "&larr; Prédécent"
+
+#: image.php:42
+#@ eyelikedesign
+msgid "Next &rarr;"
+msgstr "Suivant &rarr;"
+
+#: includes/eld-foundation.php:30
+#@ eyelikedesign
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: includes/eld-foundation.php:31
+#@ eyelikedesign
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: includes/eld-foundation.php:53
+#, php-format
+#@ eyelikedesign
+msgid "Please assign a menu to the primary menu location under %1$s or %2$s the design."
+msgstr "Merci d'attribuer un menu à cette zone de menu sous %1$s ou %2$s le design."
+
+#: includes/eld-foundation.php:54
+#, php-format
+#@ eyelikedesign
+msgid "<a href=\"%s\">Menus</a>"
+msgstr "<a href=\"%s\">Menus</a>"
+
+#: includes/eld-foundation.php:57
+#, php-format
+#@ eyelikedesign
+msgid "<a href=\"%s\">Customize</a>"
+msgstr "<a href=\"%s\">Personnaliser</a>"
+
+#: includes/eld-foundation.php:261
+#@ eyelikedesign
+msgid "&larr; Home"
+msgstr "&larr; Accueil"
+
+#: includes/eld-mce.php:58
+#@ eyelikedesign
+msgid "Button"
+msgstr "Bouton"
+
+#: includes/eld-mce.php:64
+#@ eyelikedesign
+msgid "Lead Paragraph"
+msgstr "Accroche"
+
+#: includes/eld-mce.php:69
+#@ eyelikedesign
+msgid "Label"
+msgstr "Label"
+
+#: includes/eld-mce.php:74
+#@ eyelikedesign
+msgid "Panel"
+msgstr "Panneau"
+
+#: includes/eld-mce.php:80
+#@ eyelikedesign
+msgid "Panel callout"
+msgstr "Panel callout"
+
+#: includes/eld-mce.php:87
+#@ eyelikedesign
+msgid "Radius (Panel, Label, Button)"
+msgstr "Radius (Panel, Label, Bouton)"
+
+#: includes/eld-mce.php:93
+#@ eyelikedesign
+msgid "Round (Label, Button)"
+msgstr "Arrondi (Label, Bouton)"
+
+#: includes/eld-mce.php:99
+#@ eyelikedesign
+msgid "Alert (Label, Button)"
+msgstr "Alerte (Label, Bouton)"
+
+#: includes/eld-mce.php:104
+#@ eyelikedesign
+msgid "Success (Label, Button)"
+msgstr "Succès (Label, Bouton)"
+
+#: includes/eld-mce.php:109
+#@ eyelikedesign
+msgid "Secondary (Label, Button)"
+msgstr "Secondaire (Label, Bouton)"
+
+#: includes/eld-mce.php:114
+#@ eyelikedesign
+msgid "Subheader (Headings)"
+msgstr "Sous-titre (Headings)"
+
+#: includes/eld-mce.php:119
+#@ eyelikedesign
+msgid "Keyboard CMD"
+msgstr "Commande clavier"
+
+#: page-templates/off-canvas-page.php:20
+#@ eyelikedesign
+msgid "Menu"
+msgstr "Menu"
+
+#: searchform.php:11
+#@ eyelikedesign
+msgid "Search for:"
+msgstr "Recherche pour: "
+
+#: searchform.php:14
+#: searchform.php:17
+#@ eyelikedesign
+msgid "Search"
+msgstr "Recherche"
+
+#: sidebar.php:15
+#@ eyelikedesign
+msgid "There are no widgets yet!"
+msgstr "Il n'y a pas encore de widgets !"
+
+#: sidebar.php:16
+#@ eyelikedesign
+msgid "Please add some real widgets, because otherwise your visitors get nothing but whitespace here."
+msgstr "Merci d'ajouter quelques widget, sinon vos visiteurs ne verront rien d'autres que du vide ici !"
+
+#: sidebar.php:17
+#@ eyelikedesign
+msgid "Add widgets"
+msgstr "Ajouter des widgets"
+
