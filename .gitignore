@@ -15,3 +15,10 @@
 !wp-content/themes/*/*/*
 !wp-content/themes/*/*/*/*
 !wp-content/themes/*/*/*/*/*
+
+!styles/
+!styles/*
+!styles/*/*
+!styles/*/*/*
+!styles/*/*/*/*
+!styles/*/*/*/*/*
