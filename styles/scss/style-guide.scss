@@ -1,10 +1,10 @@
-@import 'bourbon'; // http://bourbon.io/
+@import "../bourbon/bourbon"; // http://bourbon.io/
 
 @import '../partials/layout'; // responsive grid and media queries
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-1: #0FB9EC; // Work Muse Blue 
 $color-2: #19191a; // Dark Blue
 $color-3: #e4655f; // Red
 $color-4: #e6e6e6; // light grey
@@ -17,8 +17,9 @@ $alert: $color-3;  // red
 
 // fonts
 
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$fun-font: 'Grand Hotel', cursive;
+$body-font: 'Montserrat', sans-serif;
 
 /* -------------------------------- 
 
@@ -54,16 +55,6 @@ xNavigation
 
 header {
 	background-color: $color-2;
-}
-
-.cd-logo {
-	/* logo box style */
-	background-color: $color-1;
-	width: 120px;
-
-	@include MQ(M) {
-		width: 180px;
-	}
 }
 
 .cd-main-nav {
@@ -154,7 +145,7 @@ xTypography
 -------------------------------- */
 
 h1, h2 {
-	font-family: $secondary-font;
+	font-family: $heading-font;
 	color: $color-2;
 }
 
@@ -217,7 +208,7 @@ xButtons
 	border-radius: .25em;
 	font: {
 		size: 1.4rem;
-		family: $secondary-font;
+		family: $heading-font;
 	}
 	color: $color-5;
 	padding: .6em 2.2em;
