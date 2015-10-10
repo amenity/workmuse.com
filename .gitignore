@@ -12,17 +12,3 @@
 !wp-content/themes/*/*/*
 !wp-content/themes/*/*/*/*
 !wp-content/themes/*/*/*/*/*
-
-
-#todo: 
-!styles/
-!styles/*
-styles/.sass-cache/
-styles/bourbon/
-styles/css/style-guide.css.map
-!styles/*/*
-!styles/*/*/*
-!styles/*/*/*/*
-!styles/*/*/*/*/*
-
-.DS_Store
