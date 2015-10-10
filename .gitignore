@@ -1,6 +1,3 @@
-# Ignore everything in the root except the "wp-content" directory besides this file.../*
-
-!.gitignore
 # Ignore everything in the root...
 *
 
@@ -15,3 +12,15 @@
 !wp-content/themes/*/*/*
 !wp-content/themes/*/*/*/*
 !wp-content/themes/*/*/*/*/*
+
+!styles/
+!styles/*
+styles/.sass-cache/
+styles/.sass-cache/*
+styles/css/style-guide.css.map
+!styles/*/*
+!styles/*/*/*
+!styles/*/*/*/*
+!styles/*/*/*/*/*
+
+.DS_Store
