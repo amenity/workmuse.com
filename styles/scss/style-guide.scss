@@ -1,17 +1,18 @@
 @import '../partials/layout'; // responsive grid and media queries
 
-// color palette - these colors will be the color swatches of the Colors section
+// color palette 
+$color-1: #0fb9ec; 
+$color-2: #ffd21b;
+$color-3: #444343;
+$color-4: #8d8f8b;
+$color-5: #8bcbcd;
+$color-6: #F8F6EC;
+$color-7: #f15c38;
 
-$color-1: #0FB9EC; // Work Muse Blue 
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
-$color-4: #e6e6e6; // light grey
-$color-5: #ffffff; // white
 
 // additional colors
-
 $success: #6fce72; // green
-$alert: $color-3;  // red
+$alert: $color-7;  // red
 
 // fonts
 
@@ -27,7 +28,7 @@ xBackground
 
 body {
 	/* this is the page background */
-	background-color: $color-5;
+	background: lighten($color-6, 7%);
 }
 
 /* -------------------------------- 
@@ -38,11 +39,17 @@ xPatterns
 
 .cd-box {
 	/* this is the container of various design elements - i.e. the 2 logo of the branding section */
-	border: 1px solid $color-4;
-	border-radius: 3px;
-	background: $color-5;
-	box-shadow: 0 1px 1px rgba(#000, .05);
-	padding: 6px;
+	background: lighten($color-6, 7%);
+	padding: 20px 20px 20px 0;
+	&.dark {
+		background: darken($color-3, 5%);
+		padding-left: 20px;
+	}
+}
+
+.dotted-border {
+	 border-image: url('../assets/branding/patterns/dots.svg') 24% round;
+  border-width: 0 0 5px 0; // border-bottom only  
 }
 
 /* -------------------------------- 
@@ -52,7 +59,7 @@ xNavigation
 -------------------------------- */
 
 header {
-	background-color: $color-2;
+	background: darken($color-3, 5%);
 }
 
 .cd-main-nav {
@@ -68,13 +75,8 @@ header {
 		li a {
 			color: lighten($color-2, 40%);
 
-			&.selected {
-				color: $color-5;
-				box-shadow: 0 2px 0 $color-1;
-			}
-
 			.no-touch &:hover {
-				color: $color-5;
+				color: $color-2;
 			}
 		}
 	}
@@ -123,65 +125,75 @@ header {
 
 /* -------------------------------- 
 
-xPage title 
-
--------------------------------- */
-
-main > h1 {
-	color: $color-2;
-
-	@include MQ(L) {
-		/* title goes into the header on big devices */
-		color: $color-5;
-	}
-}
-
-/* -------------------------------- 
-
 xTypography 
 
 -------------------------------- */
 
-h1, h2 {
-	font-family: $heading-font;
-	color: $color-2;
-}
-
 h1 {
-	font-size: 2.4rem;
-	font-weight: 300;
-	line-height: 1.2;
-	margin: 0 0 .4em;
+	font-family: $fun-font;
+	color: darken($color-1, 6%);
+	margin: .5em 0 .3em 0;
+	font-size: 4.8rem;
 
 	@include MQ(S) {
-		font-size: 3.2rem;
+		font-size: 5.2rem;
 	}
 
 	@include MQ(M) {
-		font-size: 4rem;
+		font-size: 6.8rem;
 	}
+}
+main > h1 {
+	text-align: center;
+}
+
+h2, h3, .cd-main-nav li {
+	font-family: $heading-font;
+	text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 h2 {
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 1em 0;
+	color: darken($color-2, 8%);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
 
 	@include MQ(S) {
-		font-size: 1.8rem;
-		margin: 1em 0 1.4em;
+		font-size: 2.8rem;
+	}
+
+	@include MQ(M) {
+		font-size: 3rem;
 	}
 }
 
-section > h2::before {
-	/* number before each section title */
-	color: darken($color-4, 15%);
+section > h2 {
+	color: darken($color-3, 5%);
 }
 
-p {
-	font-size: 1.4rem;
-	line-height: 1.4;
-	color: lighten($color-2, 25%);
+h3 {
+	color: darken($color-1, 6%);
+	font-size: 2rem;
+	margin: 1.25rem 0;
+	font-weight: 700;
+
+	@include MQ(S) {
+		font-size: 1.8rem;
+	}
+
+	@include MQ(M) {
+		font-size: 2rem;
+	}
+
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.7em;
+  letter-spacing: 0.006em;
+	color: darken($color-3, 5%);
+	margin-bottom: 1em;
 
 	a {
 		color: $color-1;
@@ -192,6 +204,10 @@ p {
 		font-size: 1.6rem;
 		line-height: 1.6;
 	}
+}
+
+strong {
+	font-weight: 700;
 }
 
 /* -------------------------------- 
@@ -208,7 +224,7 @@ xButtons
 		size: 1.4rem;
 		family: $heading-font;
 	}
-	color: $color-5;
+	color: lighten($color-6, 5%);
 	padding: .6em 2.2em;
 	cursor: pointer;
 	background: $color-1;
@@ -243,7 +259,7 @@ xButtons
 		box-shadow: inset 0 0 0 1px $color-1;
 
 		.no-touch &:hover {
-			color: $color-5;
+			color: lighten($color-6, 5%);
 			background: $color-1;
 		}
 	}
@@ -319,7 +335,6 @@ input[type=checkbox] {
 .radio-label,
 .checkbox-label {
 	padding-left: 24px;
-	@include user-select(none);
 
 	&::before,
 	&::after {
@@ -330,7 +345,6 @@ input[type=checkbox] {
 		height: 16px;
 		position: absolute;
 		top: 50%;
-		@include transform(translateY(-50%));
 	}
 
 	&::before {
@@ -373,7 +387,6 @@ input[type=checkbox]:checked + label::after {
 	z-index: 1;
 	right: 14px;
 	top: 50%;
-	@include transform(translateY(-50%));
 	display: block;
 	width: 16px;
 	height: 16px;
@@ -385,7 +398,6 @@ select {
 	position: relative;
 	padding: .6em 2em .6em 1em;
 	cursor: pointer;
-	@include appearance(none);
 }
 
 @import '../partials/basic-style';

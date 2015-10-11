@@ -1,7 +1,7 @@
 // breakpoints
    
 $S:     768px;   
-$M:     1024px;     
+$M:     1024px;      
 $L:     1600px;   
 
 // media queries
@@ -25,3 +25,28 @@ $L:     1600px;
   float: $float-direction;
 }
 
+
+/* additional b/c removing Bourbon */
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}          
