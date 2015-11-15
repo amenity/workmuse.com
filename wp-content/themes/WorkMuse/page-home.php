@@ -15,9 +15,9 @@ get_header(); ?>
 
 	<!-- Row for main content area -->
 	<?php $img = get_field('banner_image'); ?>
-	<div class="homeHero">
+	<div class="hero">
 		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" />
-		<div class="heroOverlay">
+		<div class="heroOverlay five columns">
 			<?php the_field('banner_overlay'); ?>
 		</div>
 	</div>
@@ -32,8 +32,8 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<div class="pitch text-center">
-							<?php the_field('pitch'); ?>
-						</div>
+						<?php the_field('pitch'); ?>
+					</div>
 
 
 

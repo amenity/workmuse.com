@@ -6,6 +6,15 @@ Description: Used to style the TinyMCE editor.
 /*
     Load the Google Fonts Daddy, we want them in our Editor!
  */
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Grand+Hotel);
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; font-weight: 300; }
+body, h3, h4, h5, h6 {
+  background-color: #FFFDFD;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Typography*/
+h1, h2 { 
+  font-family: 'Grand Hotel', serif; 
+  font-weight: 300; 
+}
