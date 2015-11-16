@@ -22,12 +22,13 @@ body {
 	background-color: #FFFDFD;
 }
 
-body, h3, h4, h5, h6 {
+body, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
+  color: #212121;
 }
 
 /*Typography*/
-h1, h2 { 
+h1{ 
 	font-family: 'Grand Hotel', serif; 
 	font-weight: 300; 
 }
@@ -53,7 +54,27 @@ h2 {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   font-size: 2.5rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
+
+h3 {
+  color: #0da2cf;
+  font-size: 2.5rem;
+  margin: 1.25rem 0;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  color: #8BCBCD;
+  font-size: 2.25rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 @media only screen and (min-width: 768px) {
   h2 {
     font-size: 2.8rem; 
@@ -181,8 +202,10 @@ ul.navWrap li{
 	nav.top-bar{margin:0 0 10px;}
   nav.top-bar ul {width: 75%; margin: 0 auto;}
 	nav.top-bar ul>li.name {display:block;}
-  nav.top-bar div.menu-primary-container>ul>li>a {border-bottom: 2px solid #8BCBCD; padding-bottom: 1rem; display:inline;}
-	nav.top-bar ul>li:not(.name), nav.top-bar ul>li#menu-item-121 {width:100%; max-width:100%; text-align:center;}
+  nav.top-bar div.menu-primary-container>ul>li>a {border-bottom: 2px solid #8BCBCD; padding-bottom: 1rem; display:inline; }
+  nav.top-bar div.menu-primary-container>ul>li.menu-item-has-children>a {color: #8BCBCD;}
+	nav.top-bar div.menu-primary-container>ul>li.menu-item-has-children>a:after {content: ":";}
+  nav.top-bar ul>li:not(.name), nav.top-bar ul>li#menu-item-121 {width:100%; max-width:100%; text-align:center;}
 	nav.top-bar.expanded ul.sub-menu {box-shadow:none; display:block; position:relative;}
 	nav.top-bar.expanded ul.sub-menu li {display:block;}
 }
@@ -200,10 +223,14 @@ ul.navWrap li{
 
 .heroOverlay h2 {
 	color: white;
+  font-family: 'Grand Hotel', serif; 
+  font-weight: 300;
 	font-size: 300%;
 	text-shadow: 1px 1px 6px rgba(68, 67, 67, 0.5);
 	margin-bottom: 0;
 	padding-bottom: 0;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .heroOverlay h3 {
@@ -216,3 +243,19 @@ ul.navWrap li{
   text-shadow: 1.5px 1.5px 0px rgba(15, 185, 236, 0.5);
   margin-top: 0;
 }
+
+.pitch {
+  margin: 1em auto;
+}
+
+/*Hexagon Images*/
+.hex-image {
+  margin-bottom: -100.5%;
+  width: 99%;
+}
+
+#svgMask {
+  fill: white;
+}
+
+
