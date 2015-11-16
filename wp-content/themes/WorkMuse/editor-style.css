@@ -8,13 +8,32 @@ Description: Used to style the TinyMCE editor.
  */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Grand+Hotel);
 
-body, h3, h4, h5, h6 {
-  background-color: #FFFDFD;
-  font-family: 'Montserrat', sans-serif;
+body, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
-/*Typography*/
-h1, h2 { 
-  font-family: 'Grand Hotel', serif; 
-  font-weight: 300; 
+h2 {
+  color: #f1c200;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+h3 {
+  color: #0da2cf;
+  font-size: 2.5rem;
+  margin: 1.25rem 0;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  color: #8BCBCD;
+  font-size: 2.25rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
