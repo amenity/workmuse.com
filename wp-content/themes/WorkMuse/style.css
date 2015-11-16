@@ -203,7 +203,7 @@ ul.navWrap li{
   nav.top-bar ul {width: 75%; margin: 0 auto;}
 	nav.top-bar ul>li.name {display:block;}
   nav.top-bar div.menu-primary-container>ul>li>a {border-bottom: 2px solid #8BCBCD; padding-bottom: 1rem; display:inline; }
-  nav.top-bar div.menu-primary-container>ul>li.menu-item-has-children>a {color: #8BCBCD;}
+  nav.top-bar div.menu-primary-container>ul>li.menu-item-has-children>a {color: #8BCBCD; cursor: default; }
 	nav.top-bar div.menu-primary-container>ul>li.menu-item-has-children>a:after {content: ":";}
   nav.top-bar ul>li:not(.name), nav.top-bar ul>li#menu-item-121 {width:100%; max-width:100%; text-align:center;}
 	nav.top-bar.expanded ul.sub-menu {box-shadow:none; display:block; position:relative;}
@@ -233,6 +233,14 @@ ul.navWrap li{
   letter-spacing: 0;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .heroOverlay {
+    top: 2rem;
+    font-size: 70%;
+  }
+}
+
 .heroOverlay h3 {
 	color: #212121;
 	font-size: 350%;
@@ -245,17 +253,55 @@ ul.navWrap li{
 }
 
 .pitch {
-  margin: 1em auto;
+  margin: 2em auto 1.75em;
 }
 
-/*Hexagon Images*/
+/*Hexagon Sections*/
+.section {
+
+}
+.section:nth-child(even){
+  background-color: #212121;
+  color: #FFFDFD;
+}
+
+.section:nth-child(even):before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -9999px;
+  right: 0;
+  border-left: 9999px solid #212121;
+  box-shadow: 9999px 0 0 #212121;
+}
+
 .hex-image {
-  margin-bottom: -100.5%;
+  margin-bottom: -100.4%;
   width: 99%;
 }
+
+@media only screen and (min-width: 768px) {
+  .section {
+    margin-left: -5em;
+  }
+ } 
+
 
 #svgMask {
   fill: white;
 }
 
+.section:nth-child(even) #svgMask {
+  fill: #212121;
+}
 
+.sectionImg {
+  margin: .25em auto 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionText{
+    margin: 9em 0;
+  }
+}
