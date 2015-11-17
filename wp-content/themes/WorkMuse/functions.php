@@ -102,22 +102,8 @@ function eyelikedesign_starter_scripts() {
         eyelikedesign_get_theme_version( false ) //version
   	);
   	wp_enqueue_style( 'app-css' );
-
-	/**
-	 * Adding google fonts
-	 *
-	 * This is the proper code to add google fonts
-	 * as seen in TwentyTwelve
-	 */
-	$protocol = is_ssl() ? 'https' : 'http';
-	$query_args = array( 'family' => 'Open+Sans:300,600' );
-	wp_enqueue_style(
-		'open-sans',
-		add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ),
-		array(),
-		null
-	);
 }
+
 add_action('wp_enqueue_scripts', 'eyelikedesign_starter_scripts');
 
 /**

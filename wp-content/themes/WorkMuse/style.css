@@ -211,6 +211,17 @@ ul.navWrap li{
 }
 /*End Nav Reset*/
 
+/*General Styles */
+.button {
+  
+}
+.dottedBorder {
+  -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
+  -o-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
+  border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
+  border-width: 0 0 8px 0;
+}
+
 /*Home Page Syles*/
 .hero{
 	position: relative;
@@ -283,10 +294,9 @@ ul.navWrap li{
 
 @media only screen and (min-width: 768px) {
   .section {
-    margin-left: -5em;
+    margin-left: -4.75em;
   }
- } 
-
+} 
 
 #svgMask {
   fill: white;
@@ -301,7 +311,15 @@ ul.navWrap li{
 }
 
 @media only screen and (min-width: 768px) {
-  .sectionText{
+  .sectionText {
     margin: 9em 0;
+    padding: 0;
   }
+  .sectionText p {
+    font-size: 125%;
+  }
+}
+
+.infographicHome img {
+  width: 100%;
 }

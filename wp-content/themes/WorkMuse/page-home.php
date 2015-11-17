@@ -17,8 +17,10 @@ get_header(); ?>
 	<?php $img = get_field('banner_image'); ?>
 	<div class="hero">
 		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" />
-		<div class="heroOverlay five columns">
-			<?php the_field('banner_overlay'); ?>
+		<div class ="row">
+			<div class="heroOverlay five columns">
+				<?php the_field('banner_overlay'); ?>
+			</div>
 		</div>
 	</div>
 
@@ -57,7 +59,7 @@ get_header(); ?>
 	  											</svg>
 							  			</div>
 
-							  			<div class="six columns sectionText">
+							  			<div class="six columns sectionText dottedBorder">
 							  				<?php the_sub_field('section_text'); ?>
 							  			</div>
 							  			<div class="clearfix"></div>
@@ -83,7 +85,7 @@ get_header(); ?>
 						        // display a sub field value
 						        $img = get_sub_field('infographic_image');
 						        ?>
-						        <div class="infographicHome">
+						        <div class="twelve columns infographicHome">
 						       		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" class="aligncenter"/>
 						        </div>
 						        <?php
