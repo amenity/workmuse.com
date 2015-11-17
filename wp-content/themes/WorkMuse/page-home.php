@@ -62,6 +62,9 @@ get_header(); ?>
 							  			<div class="six columns sectionText dottedBorder">
 							  				<?php the_sub_field('section_text'); ?>
 							  			</div>
+							  			<div class="six columns sectionStatistic">
+							  				<?php the_sub_field('section_statistic'); ?>
+							  			</div>
 							  			<div class="clearfix"></div>
 							  		</div>
 									<?php 
@@ -88,6 +91,7 @@ get_header(); ?>
 						        <div class="twelve columns infographicHome">
 						       		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" class="aligncenter"/>
 						        </div>
+						        <div class="clearfix"></div>
 						        <?php
 						
 						    endwhile;
@@ -103,7 +107,7 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 
-					<div class="homeCallOuts">
+					<div class="homeQuickLinks">
 							<div class="four columns text-center">
 								<a class="cta faq button" href="<?php echo get_the_permalink('18'); ?>">FAQ</a>
 							</div>

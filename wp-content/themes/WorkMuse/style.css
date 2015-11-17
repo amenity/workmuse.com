@@ -23,7 +23,7 @@ body {
 }
 
 body, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #212121;
 }
 
@@ -213,7 +213,19 @@ ul.navWrap li{
 
 /*General Styles */
 .button {
-  
+  background-color: #212121;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2.5px 2.5px 0px rgba(15, 185, 236, 0.8);
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 15px 25px;
+}
+
+.button:hover {
+  background-color: #212121;
+  box-shadow: 4px 4px 0px rgba(255, 210, 27, 0.9);
+
 }
 .dottedBorder {
   -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
@@ -259,7 +271,7 @@ ul.navWrap li{
 	font-family: 'Fjalla One', sans-serif;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-  text-shadow: 1.5px 1.5px 0px rgba(15, 185, 236, 0.5);
+  text-shadow: 2px 2px 0px rgba(15, 185, 236, 0.8);
   margin-top: 0;
 }
 
@@ -269,22 +281,32 @@ ul.navWrap li{
 
 /*Hexagon Sections*/
 .section {
-
+  padding: 1em 0;
 }
+
 .section:nth-child(even){
   background-color: #212121;
   color: #FFFDFD;
 }
 
-.section:nth-child(even):before{
+.section:nth-child(even):before, .infographicHome:before{
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: -9999px;
   right: 0;
+  display: block; /* Prevent Foundation .column 'table' on mobile. */
+}
+
+.section:nth-child(even):before{
   border-left: 9999px solid #212121;
   box-shadow: 9999px 0 0 #212121;
+}
+
+.infographicHome:before{
+  border-left: 9999px solid #8BCBCD;
+  box-shadow: 9999px 0 0 #8BCBCD;
 }
 
 .hex-image {
@@ -310,16 +332,57 @@ ul.navWrap li{
   margin: .25em auto 1em;
 }
 
-@media only screen and (min-width: 768px) {
+.sectionText {
+  margin: 9.5em 0 1em;
+}
+
+.sectionText p {
+  font-size: 1.7rem;
+}
+
+.sectionText, .sectionStatistic {
+  padding: 0;
+  line-height: 1.8;
+}
+
+.sectionStatistic {
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.sectionStatistic span {
+  font-size: 140%;
+  text-transform: uppercase;
+  text-shadow: 1.75px 1.75px 0px rgba(15, 185, 236, 0.8);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 925px) {
   .sectionText {
-    margin: 9em 0;
-    padding: 0;
+    margin: 7em 0 1em;
   }
-  .sectionText p {
-    font-size: 125%;
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionText {
+    margin: 1em;
   }
+  .sectionStatistic {
+    margin: .75em;
+  }
+}
+
+.infographicHome {
+  background-color: #8BCBCD;
+  padding: 2.5em 0;
 }
 
 .infographicHome img {
   width: 100%;
+}
+
+.homeQuickLinks {
+  padding: 2.5em 0;
 }
