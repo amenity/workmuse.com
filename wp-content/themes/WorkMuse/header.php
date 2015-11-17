@@ -38,6 +38,10 @@
 	<meta name="msapplication-TileColor" content="#fffdfb">
 	<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/images/devices/mstile-144x144.png">
 	<meta name="msapplication-config" content="<?php echo get_stylesheet_directory_uri(); ?>/images/devices/browserconfig.xml">
+	<!-- IE Fix for SVG images clips -->
+	<!--[if IE]>
+		<link id="fall-back-styles" href="<?php echo get_stylesheet_directory_uri() . '/stylesheets/fallback-style.css'; ?>" rel="stylesheet" type="text/css" media="all">
+	<![endif]--> 
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
