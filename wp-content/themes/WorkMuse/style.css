@@ -371,10 +371,10 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .sectionText {
-    margin: 2em 0 1em;
+    margin: 1em;
   }
   .sectionStatistic {
-    margin: .25em 0;
+    margin: .75em;
   }
 }
 
