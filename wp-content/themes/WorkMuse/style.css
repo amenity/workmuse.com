@@ -212,6 +212,10 @@ ul.navWrap li{
 /*End Nav Reset*/
 
 /*General Styles */
+a:hover, #footer a:hover {
+  color: #FFD21B;
+}
+
 .button {
   background-color: #212121;
   border: none;
@@ -374,6 +378,7 @@ ul.navWrap li{
   }
 }
 
+/*Remaining home page*/
 .infographicHome {
   background-color: #8BCBCD;
   padding: 2.5em 0;
@@ -384,5 +389,62 @@ ul.navWrap li{
 }
 
 .homeQuickLinks {
+  padding: 2.5em 0 8.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .homeQuickLinks {
+    padding-bottom: 2.5em;
+  }
+}
+
+/*Footer*/
+#footer {
+  background-color: #212121;
   padding: 2.5em 0;
+}
+
+#footer p, #footer a{
+  color: #FFFDFD;
+  letter-spacing: 0.05em;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+#footer p span:not(:last-child):after {
+  content: " •";
+  color: #F15C38;
+  font-size: 1.25em;
+}
+
+#footer p span:last-child:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+#footer h3 {
+  color: #F15C38;
+  font-family: 'Grand Hotel', serif; 
+  font-size: 245%;
+  letter-spacing: 0;
+}
+
+#footer h3, #footer h4 {
+  display: inline;
+  font-weight: 300;
+}
+
+ #footer h4 a {
+  font-size: .85em;
+  margin-left: 18px;
+  text-transform: none;
+ }
+
+ .social a:not(:first-child) {
+  margin-left: 20px;
+}
+
+.smallPrint.row{
+  margin: 2em auto;
 }
