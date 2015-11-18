@@ -225,8 +225,8 @@ ul.navWrap li{
 .button:hover {
   background-color: #212121;
   box-shadow: 4px 4px 0px rgba(255, 210, 27, 0.9);
-
 }
+
 .dottedBorder {
   -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   -o-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
