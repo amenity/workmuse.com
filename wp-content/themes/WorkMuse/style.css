@@ -212,10 +212,6 @@ ul.navWrap li{
 /*End Nav Reset*/
 
 /*General Styles */
-a:hover {
-  color: #FFD21B;
-}
-
 .button {
   background-color: #212121;
   border: none;
@@ -293,7 +289,7 @@ a:hover {
   color: #FFFDFD;
 }
 
-.section:nth-child(even):before, .infographicHome:before, #footer:before{
+.section:nth-child(even):before, .infographicHome:before{
   content: "";
   position: absolute;
   top: 0;
@@ -303,7 +299,7 @@ a:hover {
   display: block; /* Prevent Foundation .column 'table' on mobile. */
 }
 
-.section:nth-child(even):before, #footer:before{
+.section:nth-child(even):before{
   border-left: 9999px solid #212121;
   box-shadow: 9999px 0 0 #212121;
 }
@@ -378,7 +374,6 @@ a:hover {
   }
 }
 
-/*Remaining home page*/
 .infographicHome {
   background-color: #8BCBCD;
   padding: 2.5em 0;
@@ -389,43 +384,5 @@ a:hover {
 }
 
 .homeQuickLinks {
-  padding: 2.5em 0 8.5em;
-}
-
-@media only screen and (max-width: 768px) {
-  .homeQuickLinks {
-    padding-bottom: 2.5em;
-  }
-}
-
-/*Footer*/
-#footer {
-  background-color: #212121;
   padding: 2.5em 0;
 }
-
-#footer p, #footer p>a{
- color: #FFFDFD;
- display: inline-block;
-}
-
-#footer h3 {
-  color: #F15C38;
-  font-family: 'Grand Hotel', serif; 
-  font-size: 248%;
-  letter-spacing: 0;
-}
-
-#footer h3, #footer h4 {
-  display: inline;
-  font-weight: 300;
-}
- #footer h4 {
-  letter-spacing: 0.01em;
-  margin-left: 18px;
-  text-transform: none;
- }
-
- .social a:not(:first-child) {
-  margin-left: 20px;
- }
