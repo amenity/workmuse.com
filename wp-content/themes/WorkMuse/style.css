@@ -314,7 +314,7 @@ ul.navWrap li{
   width: 99%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 925px) {
   .section {
     margin-left: -4.75em;
   }
@@ -367,10 +367,10 @@ ul.navWrap li{
 
 @media only screen and (max-width: 768px) {
   .sectionText {
-    margin: 1em;
+    margin: 2em 0 1em;
   }
   .sectionStatistic {
-    margin: .75em;
+    margin: .25em 0;
   }
 }
 
