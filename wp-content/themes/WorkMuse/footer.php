@@ -18,28 +18,28 @@
 			?>
 			<div id="footer" class="row" role="contentinfo">
 				<div class="twelve columns">
-					<a href="https://twitter.com/work_muse">
-			    <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
-			    </a>
-			    <a href="https://www.facebook.com/workmuse">
-			    <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
-			    </a>
-			    <a href="https://instagram.com/workmuse/">
-			    <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
-			    </a>
-					<hr />
+					<div class="eight columns">
+						<h3>Contact:</h3>
+						<h4><a class="phone" href="tel:5127793818">512.779.3818</a></h4>
+						<h4><a class="email"  href="hello@workmuse.com">hello@workmuse.com</a></h4>
+					</div>
+					<div class="social four columns">
+						<a href="https://twitter.com/work_muse">
+				    	<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+				    </a>
+				    <a href="https://www.facebook.com/workmuse">
+				    	<img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+				    </a>
+				    <a href="https://instagram.com/workmuse/">
+				    	<img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+				    </a>
+					</div>
 				</div>
-				<div class="four columns">
+				<div class="smallPrint twelve columns">
+					<p>Copyright <?php echo date('Y'); ?></p>
+					<p><a href="/terms-conditions/">Terms and Conditions</a></p>
 					<?php do_action( 'eyelikedesign_credits' ); ?>
 					<p><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'eyelikedesign' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'eyelikedesign' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'eyelikedesign' ), 'WordPress' ); ?></a></p>
-				</div>
-				<div class="eight columns">
-					<?php wp_nav_menu( array(
-						'theme_location' => 'secondary',
-						'container' => false,
-						'menu_class' => 'inline-list right',
-						'fallback_cb' => false
-					) ); ?>
 				</div>
 			</div>
 	</div><!-- Container End -->
