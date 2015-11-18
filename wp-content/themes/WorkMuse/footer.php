@@ -16,14 +16,14 @@
 			if ( ! is_404() )
 				get_sidebar( 'footer' );
 			?>
-			<div id="footer" class="row" role="contentinfo">
-				<div class="twelve columns">
+			<div id="footer" role="contentinfo">
+				<div class="row">
 					<div class="eight columns">
 						<h3>Contact:</h3>
 						<h4><a class="phone" href="tel:5127793818">512.779.3818</a></h4>
 						<h4><a class="email"  href="hello@workmuse.com">hello@workmuse.com</a></h4>
 					</div>
-					<div class="social four columns">
+					<div class="social four columns text-center">
 						<a href="https://twitter.com/work_muse">
 				    	<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
 				    </a>
@@ -35,11 +35,15 @@
 				    </a>
 					</div>
 				</div>
-				<div class="smallPrint twelve columns">
-					<p>Copyright <?php echo date('Y'); ?></p>
-					<p><a href="/terms-conditions/">Terms and Conditions</a></p>
-					<?php do_action( 'eyelikedesign_credits' ); ?>
-					<p><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'eyelikedesign' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'eyelikedesign' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'eyelikedesign' ), 'WordPress' ); ?></a></p>
+				<div class="smallPrint row">
+					<div class="twelve columns">
+						<p>
+							<span>Copyright <?php echo date('Y'); ?></span>
+							<span><a href="/terms-conditions/">Terms and Conditions</a></span>
+							<span>Site by <a href="http://eyelikedesign.com/" title="eyelikedesign Themes">EyeLikeDesign</a>.</span>
+							<span><a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>.</span>
+						</p>
+					</div>
 				</div>
 			</div>
 	</div><!-- Container End -->

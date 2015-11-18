@@ -104,6 +104,8 @@ function eyelikedesign_starter_scripts() {
   	wp_enqueue_style( 'app-css' );
 }
 
+remove_action( 'eyelikedesign_credits', 'eyelikedesign_sample_credits' );
+
 add_action('wp_enqueue_scripts', 'eyelikedesign_starter_scripts');
 
 /**
