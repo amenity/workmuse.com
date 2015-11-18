@@ -225,8 +225,8 @@ ul.navWrap li{
 .button:hover {
   background-color: #212121;
   box-shadow: 4px 4px 0px rgba(255, 210, 27, 0.9);
-
 }
+
 .dottedBorder {
   -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   -o-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
@@ -359,12 +359,12 @@ ul.navWrap li{
   text-shadow: 1.75px 1.75px 0px rgba(15, 185, 236, 0.8);
 }
 
-/*@media only screen and (min-width: 768px) and (max-width: 925px) {
+@media only screen and (min-width: 768px) and (max-width: 925px) {
   .sectionText {
     margin: 7em 0 1em;
   }
 }
-*/
+
 @media only screen and (max-width: 768px) {
   .sectionText {
     margin: 1em;
