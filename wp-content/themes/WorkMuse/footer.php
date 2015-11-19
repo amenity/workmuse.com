@@ -17,22 +17,30 @@
 				get_sidebar( 'footer' );
 			?>
 			<div id="footer" role="contentinfo">
-				<div class="row">
-					<div class="eight columns">
+				<div class="row dottedBorder">
+					<div class="four columns contact">
 						<h3>Contact:</h3>
 						<h4><a class="phone" href="tel:5127793818">512.779.3818</a></h4>
 						<h4><a class="email"  href="hello@workmuse.com">hello@workmuse.com</a></h4>
 					</div>
-					<div class="social four columns text-center">
-						<a href="https://twitter.com/work_muse">
-				    	<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
-				    </a>
-				    <a href="https://www.facebook.com/workmuse">
-				    	<img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
-				    </a>
-				    <a href="https://instagram.com/workmuse/">
-				    	<img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
-				    </a>
+					<div class="logo four columns">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/workmuse_reverse_logo.svg" alt="Work Muse: A Job Share Solutions Firm">
+						</a>
+					</div>
+					<div class="social four columns">
+						<h3>Connect:</h3>
+						<div>
+							<a href="https://twitter.com/work_muse">
+					    	<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+					    </a>
+					    <a href="https://www.facebook.com/workmuse">
+					    	<img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+					    </a>
+					    <a href="https://instagram.com/workmuse/">
+					    	<img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+					    </a>
+					  </div>
 					</div>
 				</div>
 				<div class="smallPrint row">
