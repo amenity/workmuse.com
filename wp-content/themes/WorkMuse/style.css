@@ -279,7 +279,11 @@ a:hover, #footer a:hover {
   margin-top: 0;
 }
 
-.pitch {
+.definition {
+  margin: 2em auto 1.75em;
+}
+
+.mission {
   margin: 2em auto 1.75em;
 }
 

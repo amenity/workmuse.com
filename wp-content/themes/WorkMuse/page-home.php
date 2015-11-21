@@ -33,11 +33,42 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<div class="pitch  eight columns offset-by-two text-center">
-						<?php the_field('pitch'); ?>
+					<div class="definition six columns text-center">
+						<?php the_field('definition'); ?>
 					</div>
 
+					<div class="mission six columns text-center">
+						<?php the_field('mission'); ?>
+					</div>
 
+				<?php
+						
+						// check if the repeater field has rows of data
+						if( have_rows('infographic') ):
+						
+						 	// loop through the rows of data
+						    while ( have_rows('infographic') ) : the_row();
+						
+						        // display a sub field value
+						        $img = get_sub_field('infographic_image');
+						        ?>
+						        <div class="twelve columns infographicHome">
+						       		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" class="aligncenter"/>
+						        </div>
+						        <div class="clearfix"></div>
+						        <?php
+						
+						    endwhile;
+						
+						else :
+						
+						    // no rows found
+						
+						endif;
+						
+						?>
+
+				<?php endwhile; // end of the loop. ?>
 
 						<?php
 						//Begin Image and Text Section
@@ -76,35 +107,6 @@ get_header(); ?>
 						endif;
 						//End Image and Text Section
 						?>
-
-						<?php
-						
-						// check if the repeater field has rows of data
-						if( have_rows('infographic') ):
-						
-						 	// loop through the rows of data
-						    while ( have_rows('infographic') ) : the_row();
-						
-						        // display a sub field value
-						        $img = get_sub_field('infographic_image');
-						        ?>
-						        <div class="twelve columns infographicHome">
-						       		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" class="aligncenter"/>
-						        </div>
-						        <div class="clearfix"></div>
-						        <?php
-						
-						    endwhile;
-						
-						else :
-						
-						    // no rows found
-						
-						endif;
-						
-						?>
-
-				<?php endwhile; // end of the loop. ?>
 
 
 					<div class="homeQuickLinks">
