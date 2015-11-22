@@ -81,7 +81,7 @@ get_header(); ?>
 						        // display a sub field value
 						  		?>
 						  			<div class="twelve columns section">
-							  			<div class="six columns sectionImg">
+							  			<div class="three columns sectionImg">
 							  				<?php $imgtxt = get_sub_field('section_image');
 							  					$img = wp_get_attachment_image_src( $imgtxt, 'thumbnail' );
 							  					echo '<img src="'.$img[0] . '" class="hex-image" />'; ?>
@@ -90,12 +90,14 @@ get_header(); ?>
 	  											</svg>
 							  			</div>
 
-							  			<div class="six columns sectionText dottedBorder">
-							  				<?php the_sub_field('section_text'); ?>
-							  			</div>
-							  			<div class="six columns sectionStatistic">
+											<div class="three columns sectionStatistic text-center">
 							  				<?php the_sub_field('section_statistic'); ?>
 							  			</div>
+
+							  			<div class="six columns sectionText dottedBorder leftDots">
+							  				<?php the_sub_field('section_text'); ?>
+							  			</div>
+
 							  			<div class="clearfix"></div>
 							  		</div>
 									<?php 

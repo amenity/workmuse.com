@@ -17,7 +17,7 @@
 				get_sidebar( 'footer' );
 			?>
 			<div id="footer" role="contentinfo">
-				<div class="row dottedBorder">
+				<div class="row dottedBorder bottomDots">
 					<div class="four columns contact">
 						<h3>Contact:</h3>
 						<h4><a class="phone" href="tel:5127793818">512.779.3818</a></h4>

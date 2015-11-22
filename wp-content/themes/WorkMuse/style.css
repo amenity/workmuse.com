@@ -88,7 +88,7 @@ h4 {
 }
 
 span.amarillo {
-  color: #FFD21B;
+  color: #FDD43A;
   text-shadow: none;
 }
 
@@ -109,7 +109,7 @@ span.amarillo {
 }
 
 /*Nav Reset*/
-.top-bar-js-breakpoint{width:776px!important; visibility:hidden;
+.top-bar-js-breakpoint{width:867px!important; visibility:hidden;
 }
 
 nav.top-bar{
@@ -146,7 +146,7 @@ nav.top-bar ul>li>ul.sub-menu>li:not(.name)>a{
 }
 
 nav.top-bar ul>li>ul.sub-menu>li:not(.name)>a:hover{
-	color:#444343;
+	color:#22BFD1;
 }
 
 nav.top-bar ul>li:hover>ul.sub-menu{
@@ -166,7 +166,7 @@ nav.top-bar ul>li:not(.name){
 
 nav.top-bar ul>li:not(.name):hover a,nav.top-bar ul>li:not(.name).active a,nav.top-bar ul>li:not(.name):focus a{
   background:transparent;
-  color:#444343;
+  color:#22BFD1;
 }
 
 nav.top-bar ul>li.toggle-topbar{
@@ -193,8 +193,22 @@ ul.navWrap li{
   width:100%;
 }
 
+/*FAQ button*/
+#menu-item-216 a {
+  background-color: #FDD43A;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2.5px 2.5px 0px rgba(15, 185, 236, 0.8);
+  margin-left: 6px;
+  padding: 0 12px;
+}
+
+#menu-item-216 a:hover {
+  box-shadow: 3.5px 3.5px 0px rgba(15, 185, 236, 1);
+}
+
 /*Only for Nav Resets*/
-@media only screen and (max-width: 776px) {
+@media only screen and (max-width: 867px) {
   #site-title {line-height: .5; margin-bottom: 0;}
   #site-title>a>img {display: block;}
 	ul.navWrap li.name {display:block;}
@@ -208,12 +222,20 @@ ul.navWrap li{
   nav.top-bar ul>li:not(.name), nav.top-bar ul>li#menu-item-121 {width:100%; max-width:100%; text-align:center;}
 	nav.top-bar.expanded ul.sub-menu {box-shadow:none; display:block; position:relative;}
 	nav.top-bar.expanded ul.sub-menu li {display:block;}
+  #menu-item-216 a {margin-left: -2px;}
+}
+@media only screen and (min-width: 767px) and (max-width: 867px) {
+  /*Finesse topbar-toggle vertical align*/
 }
 /*End Nav Reset*/
 
 /*General Styles */
+a {
+  color: #22BFD1;
+}
+
 a:hover, #footer a:hover {
-  color: #FFD21B;
+  color: #FDD43A;
 }
 
 .button {
@@ -235,7 +257,23 @@ a:hover, #footer a:hover {
   -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   -o-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
-  border-width: 0 0 8px 0;
+}
+
+.bottomDots {
+  border-width: 0 0 7px 0;
+}
+
+.hex-image {
+  margin-bottom: -100.4%;
+  width: 99%;
+}
+
+#svgMask {
+  fill: white;
+}
+
+.leftDots {
+  border-width: 0 0 0 7px;
 }
 
 /*Home Page Syles*/
@@ -260,7 +298,6 @@ a:hover, #footer a:hover {
   letter-spacing: 0;
 }
 
-
 @media only screen and (max-width: 768px) {
   .heroOverlay {
     top: 2rem;
@@ -275,7 +312,7 @@ a:hover, #footer a:hover {
 	font-family: 'Fjalla One', sans-serif;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-  text-shadow: 2px 2px 0px rgba(15, 185, 236, 0.8);
+  text-shadow: 2px 2px 0px rgba(34, 191, 209, 0.8);
   margin-top: 0;
 }
 
@@ -290,10 +327,25 @@ a:hover, #footer a:hover {
 /*Hexagon Sections*/
 .section {
   padding: 1em 0;
+  display: -ms-flex; 
+  display: -webkit-flex; 
+  display: flex; 
 }
 
+.columns .sectionImg {
+  margin: .25em auto 1em;
+  padding: 0;
+}
+
+@media only screen and (min-width: 925px) {
+  .columns .sectionImg {
+    margin-left: -3%;
+    width: 28%;
+  }
+} 
+
 .section:nth-child(even){
-  background-color: #212121;
+  background-color: #383838;
   color: #FFFDFD;
 }
 
@@ -308,8 +360,8 @@ a:hover, #footer a:hover {
 }
 
 .section:nth-child(even):before{
-  border-left: 9999px solid #212121;
-  box-shadow: 9999px 0 0 #212121;
+  border-left: 9999px solid #383838;
+  box-shadow: 9999px 0 0 #383838;
 }
 
 .infographicHome:before{
@@ -317,69 +369,57 @@ a:hover, #footer a:hover {
   box-shadow: 9999px 0 0 #8BCBCD;
 }
 
-.hex-image {
-  margin-bottom: -100.4%;
-  width: 99%;
-}
-
-@media only screen and (min-width: 925px) {
-  .section {
-    margin-left: -4.75em;
-  }
-} 
-
-#svgMask {
-  fill: white;
-}
-
 .section:nth-child(even) #svgMask {
-  fill: #212121;
-}
-
-.sectionImg {
-  margin: .25em auto 1em;
+  fill: #383838;
 }
 
 .sectionText {
-  margin: 9.5em 0 1em;
+  flex: 1;
+  line-height: 1.8;
+  margin: 2em 0;
+  padding: 3em;
 }
 
 .sectionText p {
-  font-size: 1.7rem;
-}
-
-.sectionText, .sectionStatistic {
-  padding: 0;
-  line-height: 1.8;
+  font-size: 1.15rem;
 }
 
 .sectionStatistic {
+  padding: 2em 2em 2em 1em;
+}
+
+.sectionStatistic p {
+  font-family: 'Fjalla One', sans-serif;
   font-size: 2rem;
   font-weight: 100;
-  font-family: 'Fjalla One', sans-serif;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.sectionStatistic span {
-  font-size: 140%;
-  text-transform: uppercase;
-  text-shadow: 1.75px 1.75px 0px rgba(15, 185, 236, 0.8);
+.sectionStatistic strong {
+  color: #8BCBCD;
+}
+
+.sectionStatistic h2{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.sectionStatistic em {
+  font-family: 'Grand Hotel', serif; 
+  font-size: 3.25rem;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.25;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 925px) {
-  .sectionText {
-    margin: 7em 0 1em;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
-  .sectionText {
-    margin: 2em 0 1em;
-  }
-  .sectionStatistic {
-    margin: .25em 0;
-  }
+ 
 }
 
 /*Remaining home page*/
@@ -404,7 +444,7 @@ a:hover, #footer a:hover {
 
 /*Footer*/
 #footer {
-  background-color: #212121;
+  background-color: #383838;
   margin-top: 0.5em;
   padding: 3em 0 0;
 }

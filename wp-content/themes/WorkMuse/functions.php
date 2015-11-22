@@ -139,6 +139,9 @@ function eyelikedesign_orbit_script_args( $defaults ) {
 }
 add_filter( 'eld_orbit_script_args', 'eyelikedesign_orbit_script_args' );
 
+/**
+ *	Pare down styles in CKEditor
+ */
 function wpa_45815($arr){
     $arr['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;';
     return $arr;
