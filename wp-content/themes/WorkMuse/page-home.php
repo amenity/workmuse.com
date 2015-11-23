@@ -113,7 +113,7 @@ get_header(); ?>
 
 					<div class="homeQuickLinks">
 							<div class="four columns text-center">
-								<a class="cta faq button" href="<?php echo get_the_permalink('18'); ?>">FAQ</a>
+								<a class="cta faq button" href="<?php echo get_the_permalink('34'); ?>">Share Your Story</a>
 							</div>
 							<div class="four columns text-center">
 								<a class="cta events button" href="/category/events/">Events</a>

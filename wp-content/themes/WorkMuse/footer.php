@@ -18,8 +18,7 @@
 			?>
 			<div id="footer" role="contentinfo">
 				<div class="row dottedBorder bottomDots">
-					<div class="four columns contact">
-						<h3>Contact:</h3>
+					<div class="four columns contact text-center">
 						<h4><a class="phone" href="tel:5127793818">512.779.3818</a></h4>
 						<h4><a class="email"  href="hello@workmuse.com">hello@workmuse.com</a></h4>
 					</div>
@@ -29,16 +28,18 @@
 						</a>
 					</div>
 					<div class="social four columns">
-						<h3>Connect:</h3>
 						<div>
 							<a href="https://twitter.com/work_muse">
-					    	<img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+					    	<img title="Twitter" alt="Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" width="32" height="32" />
 					    </a>
 					    <a href="https://www.facebook.com/workmuse">
-					    	<img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+					    	<img title="Facebook" alt="Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" width="32" height="32" />
 					    </a>
 					    <a href="https://instagram.com/workmuse/">
-					    	<img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+					    	<img title="Instagram" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram.png" width="32" height="32" />
+					    </a>
+					    <a href="https://instagram.com/workmuse/">
+					    	<img title="YouTube" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png" width="32" height="32" />
 					    </a>
 					  </div>
 					</div>
