@@ -380,6 +380,7 @@ a:hover, #footer a:hover {
   line-height: 1.8;
   margin: 2em 0;
   padding: 3em;
+  min-height: 16.85em;
 }
 
 .sectionText p {
@@ -397,6 +398,7 @@ a:hover, #footer a:hover {
   .sectionText {
     margin: .75em 0;
     padding: 1.75em;
+    min-height: 0;
   }
 }
 
