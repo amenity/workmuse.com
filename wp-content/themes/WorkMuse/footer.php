@@ -16,6 +16,20 @@
 			if ( ! is_404() )
 				get_sidebar( 'footer' );
 			?>
+
+			<div class="homeButtons">
+				<div class="row">
+					<div class="four columns text-center">
+						<a class="cta faq button" href="<?php echo get_the_permalink('34'); ?>">Share Your Story</a>
+					</div>
+					<div class="four columns text-center">
+						<a class="cta events button" href="/category/events/">Events</a>
+					</div>
+					<div class="four columns text-center">
+						<a class="cta newsletter button" href="#">Newsletter</a>							
+					</div>
+				</div>	
+			</div>
 			<div id="footer" role="contentinfo">
 				<div class="row dottedBorder bottomDots">
 					<div class="four columns contact text-center">
