@@ -286,6 +286,7 @@ a:hover, #footer a:hover {
 .hero{
 	position: relative;
 }
+
 .heroOverlay {
 	position: absolute;
 	text-align: center;
@@ -448,20 +449,14 @@ a:hover, #footer a:hover {
   width: 100%;
 }
 
-.homeQuickLinks {
-  padding: 2.5em 0 8.5em;
-}
-
-@media only screen and (max-width: 768px) {
-  .homeQuickLinks {
-    padding-bottom: 2.5em;
-  }
+.homeButtons{
+  background-image: url("images/hextile-medium.png");
+  padding: 2.5em 0;
 }
 
 /*Footer*/
 #footer {
   background-color: #383838;
-  margin-top: 0.5em;
   padding: 3em 0 0;
 }
 
