@@ -239,18 +239,20 @@ a:hover, #footer a:hover {
 }
 
 .button {
-  background-color: #212121;
+  background-color: #383838;
   border: none;
   border-radius: 3px;
   box-shadow: 2.5px 2.5px 0px rgba(15, 185, 236, 0.8);
   font-size: 1.5em;
   margin: 20px;
   padding: 15px 25px;
+  text-shadow: 1px 1px 1px #212121;
 }
 
 .button:hover {
   background-color: #212121;
   box-shadow: 4px 4px 0px rgba(255, 210, 27, 0.9);
+  transition: all 0.3s ease 0s;
 }
 
 .dottedBorder {
@@ -450,8 +452,16 @@ a:hover, #footer a:hover {
 }
 
 .homeButtons{
-  background-image: url("images/hextile-medium.png");
+  background-image: url("images/hextile.png");
   padding: 2.5em 0;
+}
+
+.homeButtons .button{
+  box-shadow: 2.5px 2.5px 0px rgb(241, 92, 56);
+}
+
+.homeButtons .button:hover{
+  box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
 }
 
 /*Footer*/
@@ -520,6 +530,7 @@ a:hover, #footer a:hover {
 
 #footer p, #footer a {
   color: #FFFDFD;
+  text-shadow: 1px 1px 1px #212121;
 }
 
 #footer p {  
