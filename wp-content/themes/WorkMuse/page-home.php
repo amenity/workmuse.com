@@ -32,14 +32,6 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<div class="definition six columns text-center">
-						<?php the_field('definition'); ?>
-					</div>
-
-					<div class="mission six columns text-center">
-						<?php the_field('mission'); ?>
-					</div>
-
 				<?php endwhile; // end of the loop. ?>
 
 					<?php
@@ -52,7 +44,13 @@ get_header(); ?>
 					
 					        // display a sub field value
 					  		?>
-					  			<div class="twelve columns section">
+					  			<div class="twelve columns sectionPre">
+					  				<div class="twelve columns sectionFullWidth text-center">
+						  				<?php the_sub_field('full_width'); ?>
+						  			</div>
+						  		</div>
+						  		
+						  		<div class="twelve columns section">
 						  			<div class="three columns sectionImg">
 						  				<?php $imgtxt = get_sub_field('section_image');
 						  					$img = wp_get_attachment_image_src( $imgtxt, 'thumbnail' );
@@ -80,6 +78,9 @@ get_header(); ?>
 					//End Image and Text Section
 					?>
 					
+					<div class="definition twelve columns text-center">
+						<?php the_field('definition'); ?>
+					</div>
 			</div>
 
 
