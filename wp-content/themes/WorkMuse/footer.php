@@ -52,7 +52,7 @@
 					    <a href="https://instagram.com/workmuse/">
 					    	<img title="Instagram" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram.png" width="32" height="32" />
 					    </a>
-					    <a href="https://instagram.com/workmuse/">
+					    <a href="https://www.youtube.com/channel/UCijMmo84Je7nrXZ7x-9rEvw">
 					    	<img title="YouTube" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png" width="32" height="32" />
 					    </a>
 					  </div>

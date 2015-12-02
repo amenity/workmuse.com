@@ -24,7 +24,6 @@ get_header(); ?>
 		</div>
 	</div>
 
-	
 
 	<div id="content" class="row">
 
@@ -32,41 +31,6 @@ get_header(); ?>
 			<div class="post-box">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					<div class="definition six columns text-center">
-						<?php the_field('definition'); ?>
-					</div>
-
-					<div class="mission six columns text-center">
-						<?php the_field('mission'); ?>
-					</div>
-
-				<?php
-						
-						// check if the repeater field has rows of data
-						if( have_rows('infographic') ):
-						
-						 	// loop through the rows of data
-						    while ( have_rows('infographic') ) : the_row();
-						
-						        // display a sub field value
-						        $img = get_sub_field('infographic_image');
-						        ?>
-						        <div class="twelve columns infographicHome">
-						       		<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" class="aligncenter"/>
-						        </div>
-						        <div class="clearfix"></div>
-						        <?php
-						
-						    endwhile;
-						
-						else :
-						
-						    // no rows found
-						
-						endif;
-						
-						?>
 
 				<?php endwhile; // end of the loop. ?>
 
@@ -80,7 +44,13 @@ get_header(); ?>
 					
 					        // display a sub field value
 					  		?>
-					  			<div class="twelve columns section">
+					  			<div class="twelve columns sectionPre">
+					  				<div class="twelve columns sectionFullWidth text-center">
+						  				<?php the_sub_field('full_width'); ?>
+						  			</div>
+						  		</div>
+						  		
+						  		<div class="twelve columns section">
 						  			<div class="three columns sectionImg">
 						  				<?php $imgtxt = get_sub_field('section_image');
 						  					$img = wp_get_attachment_image_src( $imgtxt, 'thumbnail' );
@@ -108,6 +78,9 @@ get_header(); ?>
 					//End Image and Text Section
 					?>
 					
+					<div class="definition twelve columns text-center">
+						<?php the_field('definition'); ?>
+					</div>
 			</div>
 
 

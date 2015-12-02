@@ -195,16 +195,17 @@ ul.navWrap li{
 
 /*FAQ button*/
 #menu-item-216 a {
-  background-color: #FDD43A;
-  border: none;
+  border: 2px solid #22BFD1;
   border-radius: 3px;
-  box-shadow: 2.5px 2.5px 0px rgba(15, 185, 236, 0.8);
-  margin-left: 6px;
+  margin: 3px 6px;
   padding: 0 12px;
+  height: 38px;
+  line-height: 35px;
 }
 
 #menu-item-216 a:hover {
-  box-shadow: 3.5px 3.5px 0px rgba(15, 185, 236, 1);
+  background-color: #22BFD1;
+  color: #FFFDFD;
 }
 
 /*Only for Nav Resets*/
@@ -231,7 +232,7 @@ ul.navWrap li{
 
 /*General Styles */
 a {
-  color: #22BFD1;
+  color: #8BCBCD;
 }
 
 a:hover, #footer a:hover {
@@ -239,7 +240,7 @@ a:hover, #footer a:hover {
 }
 
 .button {
-  background-color: #383838;
+  background-color: #323131;
   border: none;
   border-radius: 3px;
   box-shadow: 2.5px 2.5px 0px rgba(15, 185, 236, 0.8);
@@ -321,15 +322,11 @@ a:hover, #footer a:hover {
 	font-family: 'Fjalla One', sans-serif;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
-  text-shadow: 2px 2px 0px rgba(34, 191, 209, 0.8);
+  text-shadow: 2px 2px 0px rgb(139, 203, 205);
   margin-top: 0;
 }
 
-.definition {
-  margin: 2em auto 1.75em;
-}
-
-.mission {
+.definition, .sectionPre {
   margin: 2em auto 1.75em;
 }
 
@@ -350,12 +347,14 @@ a:hover, #footer a:hover {
   }
 } 
 
-.section:nth-child(odd){
-  background-color: #383838;
+.section{
+  background-color: #323131;
   color: #FFFDFD;
 }
 
-.section:nth-child(odd):before, .infographicHome:before{
+.section:before {
+  border-left: 9999px solid #323131;
+  box-shadow: 9999px 0 0 #323131;
   content: "";
   position: absolute;
   top: 0;
@@ -365,24 +364,14 @@ a:hover, #footer a:hover {
   display: block; /* Prevent Foundation .column 'table' on mobile. */
 }
 
-.section:nth-child(odd):before{
-  border-left: 9999px solid #383838;
-  box-shadow: 9999px 0 0 #383838;
-}
-
-.infographicHome:before{
-  border-left: 9999px solid #8BCBCD;
-  box-shadow: 9999px 0 0 #8BCBCD;
-}
-
-.section:nth-child(odd) #svgMask {
-  fill: #383838;
+.section #svgMask {
+  fill: #323131;
 }
 
 .sectionText {
   line-height: 1.8;
   margin: 2em 0;
-  padding: 3em;
+  padding: 0 3em;
   min-height: 16.85em;
 }
 
@@ -424,14 +413,25 @@ a:hover, #footer a:hover {
   padding-bottom: 0;
 }
 
-.sectionStatistic em {
+.sectionStatistic em, .sectionText h2 {
   font-family: 'Grand Hotel', serif; 
-  font-size: 3.25rem;
   text-transform: none;
   font-style: normal;
   letter-spacing: 0;
+}
+
+.sectionStatistic em {
+  font-size: 3.25rem;
   line-height: 1.25;
 }
+
+.sectionText h2 {
+  color: #8BCBCD;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 925px) {
 
@@ -442,14 +442,6 @@ a:hover, #footer a:hover {
 }
 
 /*Remaining home page*/
-.infographicHome {
-  background-color: #8BCBCD;
-  padding: 2.5em 0;
-}
-
-.infographicHome img {
-  width: 100%;
-}
 
 .homeButtons{
   background-image: url("images/hextile.png");
@@ -466,7 +458,7 @@ a:hover, #footer a:hover {
 
 /*Footer*/
 #footer {
-  background-color: #383838;
+  background-color: #323131;
   padding: 3em 0 0;
 }
 
