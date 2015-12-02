@@ -326,8 +326,12 @@ a:hover, #footer a:hover {
   margin-top: 0;
 }
 
-.definition, .sectionPre {
+.sectionPre {
   margin: 2em auto 1.75em;
+}
+
+.definition {
+  background-color: #8BCBCD;
 }
 
 /*Hexagon Sections*/
@@ -352,7 +356,11 @@ a:hover, #footer a:hover {
   color: #FFFDFD;
 }
 
-.section:before {
+.columns .definition {
+  padding: 2em 1em 1.75em;
+}
+
+.section:before, .definition:before {
   border-left: 9999px solid #323131;
   box-shadow: 9999px 0 0 #323131;
   content: "";
@@ -362,6 +370,16 @@ a:hover, #footer a:hover {
   left: -9999px;
   right: 0;
   display: block; /* Prevent Foundation .column 'table' on mobile. */
+}
+
+.section:before {
+  border-left: 9999px solid #323131;
+  box-shadow: 9999px 0 0 #323131;
+}
+
+.definition:before{
+  border-left: 9999px solid #8BCBCD;
+  box-shadow: 9999px 0 0 #8BCBCD;
 }
 
 .section #svgMask {
@@ -432,13 +450,8 @@ a:hover, #footer a:hover {
   text-align: center;
 }
 
-
-@media only screen and (min-width: 768px) and (max-width: 925px) {
-
-}
-
-@media only screen and (max-width: 768px) {
- 
+.definition h2 {
+  color: #F15C38;
 }
 
 /*Remaining home page*/
