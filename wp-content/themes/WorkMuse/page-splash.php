@@ -14,7 +14,6 @@
 
 ?>
 <!-- Amenity's Code -->
-<!doctype html>
 
 <!doctype html>
 
