@@ -26,7 +26,7 @@
 						<a class="cta events button" href="/category/events/">Events</a>
 					</div>
 					<div class="four columns text-center">
-						<a class="cta newsletter button" href="#">Newsletter</a>							
+						<a class="cta newsletter button" href="http://eepurl.com/bImKgz">Newsletter</a>							
 					</div>
 				</div>	
 			</div>
@@ -79,5 +79,4 @@
 	<![endif]-->
 
 	<?php wp_footer(); ?>
-</body>
 </html>

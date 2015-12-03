@@ -195,7 +195,7 @@ ul.navWrap li{
 
 /*FAQ button*/
 #menu-item-216 a {
-  border: 2px solid #22BFD1;
+  border: 2px solid #8BCBCD;
   border-radius: 3px;
   margin: 3px 6px;
   padding: 0 12px;
@@ -204,7 +204,7 @@ ul.navWrap li{
 }
 
 #menu-item-216 a:hover {
-  background-color: #22BFD1;
+  background-color: #8BCBCD;
   color: #FFFDFD;
 }
 
@@ -251,7 +251,7 @@ a:hover, #footer a:hover {
 }
 
 .button:hover {
-  background-color: #212121;
+  background-color: #59595C;
   box-shadow: 4px 4px 0px rgba(255, 210, 27, 0.9);
   transition: all 0.3s ease 0s;
 }
@@ -328,6 +328,10 @@ a:hover, #footer a:hover {
 
 .sectionPre {
   margin: 2em auto 1.75em;
+}
+
+.sectionFullWidth h2, .definition h2 {
+  font-size: 2.5rem;
 }
 
 .definition {
