@@ -146,7 +146,7 @@ nav.top-bar ul>li>ul.sub-menu>li:not(.name)>a{
 }
 
 nav.top-bar ul>li>ul.sub-menu>li:not(.name)>a:hover{
-	color:#22BFD1;
+	color:#8BCBCD;
 }
 
 nav.top-bar ul>li:hover>ul.sub-menu{
@@ -166,7 +166,7 @@ nav.top-bar ul>li:not(.name){
 
 nav.top-bar ul>li:not(.name):hover a,nav.top-bar ul>li:not(.name).active a,nav.top-bar ul>li:not(.name):focus a{
   background:transparent;
-  color:#22BFD1;
+  color: #8BCBCD;
 }
 
 nav.top-bar ul>li.toggle-topbar{
@@ -266,15 +266,6 @@ a:hover, #footer a:hover {
   border-width: 0 0 7px 0;
 }
 
-.hex-image {
-  margin-bottom: -100.4%;
-  width: 99%;
-}
-
-#svgMask {
-  fill: white;
-}
-
 .leftDots {
   border-width: 0 0 0 7px;
 }
@@ -340,20 +331,8 @@ a:hover, #footer a:hover {
 
 /*Hexagon Sections*/
 .section {
-  padding: 1em 0;
+  padding: 2.5em 0;
 }
-
-.columns .sectionImg {
-  margin: .25em auto 1em;
-  padding: 0;
-}
-
-@media only screen and (min-width: 925px) {
-  .columns .sectionImg {
-    margin-left: -3%;
-    width: 28%;
-  }
-} 
 
 .section{
   background-color: #323131;
@@ -386,23 +365,15 @@ a:hover, #footer a:hover {
   box-shadow: 9999px 0 0 #8BCBCD;
 }
 
-.section #svgMask {
-  fill: #323131;
-}
-
 .sectionText {
   line-height: 1.8;
-  margin: 2em 0;
   padding: 0 3em;
   min-height: 16.85em;
+  width:48%;
 }
 
 .sectionText p {
   font-size: 1.15rem;
-}
-
-.sectionStatistic {
-  padding: 2em 2em 2em 1em;
 }
 
 @media only screen and (max-width: 767px) {
@@ -410,7 +381,6 @@ a:hover, #footer a:hover {
     padding: 0 2em;
   }
   .sectionText {
-    margin: .75em 0;
     padding: 1.75em;
     min-height: 0;
   }
