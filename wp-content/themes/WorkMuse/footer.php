@@ -63,7 +63,6 @@
 						<p>
 							<span>Copyright <?php echo date('Y'); ?></span>
 							<span><a href="/terms-conditions/">Terms and Conditions</a></span>
-							<span>Site by <a href="http://eyelikedesign.com/" title="eyelikedesign Themes">EyeLikeDesign</a>.</span>
 							<span><a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>.</span>
 						</p>
 					</div>

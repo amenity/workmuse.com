@@ -23,7 +23,7 @@ get_header(); ?>
           /* Get the archive title for the specific archive we are
            * dealing with.
            */
-          eyelikedesign_archive_title();
+          //eyelikedesign_archive_title();
 
           /* Since we called the_post() above, we need to
            * rewind the loop back to the beginning that way
@@ -40,13 +40,23 @@ get_header(); ?>
              * If you want to overload this in a child theme then include a file
              * called content-___.php (where ___ is the Post Format name) and that will be used instead.
              */
-            get_template_part( 'content', get_post_format() );
-          ?>
+            //get_template_part( 'content', get_post_format() );
 
+          ?>
+          <div class="three columns">
+          hexagon
+          </div>
+          <div class="nine columns">
+          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <?php the_excerpt(); ?>
+          </div>
+          <hr/>
         <?php endwhile; ?>
 
       <?php else : ?>
-        <?php get_template_part( 'content', 'none' ); ?>
+        <?php //get_template_part( 'content', 'none' ); ?>
+
+       
       <?php endif; ?>
 
       <?php if ( function_exists( 'eyelikedesign_pagination' ) ) {
