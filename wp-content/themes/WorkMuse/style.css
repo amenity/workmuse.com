@@ -34,7 +34,7 @@ h1{
 }
 
 h1 {
-  color: #0da2cf;
+  color: #8BCBCD;
   font-size: 4.8rem; 
 }
 
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-  color: #0da2cf;
+  color: #f15c38;
   font-size: 2.5rem;
   margin: 1.25rem 0;
   letter-spacing: 0.03em;
@@ -68,7 +68,7 @@ h3 {
 
 h4 {
   color: #8BCBCD;
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin: 1rem 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -85,6 +85,28 @@ h4 {
   h2 {
     font-size: 3rem; 
   } 
+}
+
+blockquote {
+  border-left: 3px solid rgba(139, 203, 205, 0.5);
+  margin: 1.5em 0;
+  padding: 0.5em 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #fdd43a;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.3em;
+}
+
+blockquote p {
+  display: inline;
+  font-size: 2.75rem;
+  font-family: 'Fjalla One';
 }
 
 span.amarillo {
@@ -156,6 +178,7 @@ nav.top-bar ul>li:hover>ul.sub-menu{
 nav.top-bar ul>li a:not(.button){
   color:#80827E;
   font-weight:normal;
+  padding: 0 13px;
 }
 
 nav.top-bar ul>li:not(.name){
@@ -209,7 +232,7 @@ ul.navWrap li{
 }
 
 /*Only for Nav Resets*/
-@media only screen and (max-width: 867px) {
+@media only screen and (max-width: 926px) {
   #site-title {line-height: .5; margin-bottom: 0;}
   #site-title>a>img {display: block;}
 	ul.navWrap li.name {display:block;}
@@ -225,8 +248,12 @@ ul.navWrap li{
 	nav.top-bar.expanded ul.sub-menu li {display:block;}
   #menu-item-216 a {margin-left: -2px;}
 }
-@media only screen and (min-width: 767px) and (max-width: 867px) {
+@media only screen and (min-width: 767px) and (max-width: 926px) {
   /*Finesse topbar-toggle vertical align*/
+  nav.top-bar {
+    margin-top: 15px;
+    height: 60px;
+  }
 }
 /*End Nav Reset*/
 
