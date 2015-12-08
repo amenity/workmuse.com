@@ -28,24 +28,19 @@ body, h2, h3, h4, h5, h6 {
 }
 
 /*Typography*/
-h1{ 
+h1, h2.entry-title{ 
 	font-family: 'Grand Hotel', serif; 
 	font-weight: 300; 
 }
 
-h1 {
+h1, h2.entry-title  {
   color: #8BCBCD;
   font-size: 4.8rem; 
 }
 
 @media only screen and (min-width: 768px) {
-  h1 {
+  h1, h2.entry-title  {
     font-size: 5.2rem; 
-  } 
-}
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 6.8rem; 
   } 
 }
 
@@ -57,6 +52,11 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+h2.entry-title {
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 h3 {
@@ -231,6 +231,31 @@ ul.navWrap li{
   color: #FFFDFD;
 }
 
+/*Side Nav*/
+ul.side-nav a{
+  color: #80827E;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em; 
+  text-transform:uppercase;
+}
+
+ul.side-nav li.active a {
+  color: #8BCBCD;
+  font-weight: normal;
+}
+
+/*Search Box*/
+input#searchsubmit {
+  font-size: 1.5rem;
+  padding: 0 15px;
+  margin: 0 0 0 22px;
+}
+
+/*Secondary Sidebar*/
+div#secondary {
+  margin-top: 1.5em; 
+}
+
 /*Only for Nav Resets*/
 @media only screen and (max-width: 926px) {
   #site-title {line-height: .5; margin-bottom: 0;}
@@ -283,13 +308,13 @@ a:hover, #footer a:hover {
   transition: all 0.3s ease 0s;
 }
 
-.dottedBorder {
+.dottedBorder, hr {
   -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   -o-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
 }
 
-.bottomDots {
+.bottomDots , hr{
   border-width: 0 0 7px 0;
 }
 
@@ -469,6 +494,9 @@ a:hover, #footer a:hover {
 .homeButtons .button:hover{
   box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
 }
+
+/*Archive styles*/
+
 
 /*Footer*/
 #footer {
