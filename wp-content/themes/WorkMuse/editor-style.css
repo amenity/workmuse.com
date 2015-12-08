@@ -6,9 +6,9 @@ Description: Used to style the TinyMCE editor.
 /*
     Load the Google Fonts Daddy, we want them in our Editor!
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Grand+Hotel);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Grand+Hotel|Fjalla+One);
 
-body, h2, h3, h4 {
+body, h2, h3, h4, p, li {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -37,3 +37,4 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+
