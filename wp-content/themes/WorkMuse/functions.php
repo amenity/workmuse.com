@@ -147,3 +147,112 @@ function wpa_45815($arr){
     return $arr;
   }
 add_filter('tiny_mce_before_init', 'wpa_45815');
+
+//Start ELD - KD Edits
+
+// Register custom post type for testimonials
+// Register Custom Post Type
+function custom_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Testimonials', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Testimonial', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Testimonials', 'text_domain' ),
+		'name_admin_bar'        => __( 'Testimonials', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Testimonial:', 'text_domain' ),
+		'all_items'             => __( 'All Testimonials', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Testimonial', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Testimonial', 'text_domain' ),
+		'edit_item'             => __( 'Edit Testimonial', 'text_domain' ),
+		'update_item'           => __( 'Update Testimonial', 'text_domain' ),
+		'view_item'             => __( 'View Testimonial', 'text_domain' ),
+		'search_items'          => __( 'Search Testimonial', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'items_list'            => __( 'Testimonials list', 'text_domain' ),
+		'items_list_navigation' => __( 'Testimonials list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Testimonials list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Testimonial', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'testimonial', $args );
+
+}
+add_action( 'init', 'custom_post_type', 0 );
+//Sidebar Link CPT
+function sidebar_link_post_type() {
+
+	$labels = array(
+		'name'                  => _x( 'Sidebar Links', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Sidebar Link', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Sidebar Links', 'text_domain' ),
+		'name_admin_bar'        => __( 'Sidebar Links', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Sidebar Link:', 'text_domain' ),
+		'all_items'             => __( 'All Sidebar Links', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Sidebar Link', 'text_domain' ),
+		'add_new'               => __( 'Add New', 'text_domain' ),
+		'new_item'              => __( 'New Sidebar Link', 'text_domain' ),
+		'edit_item'             => __( 'Edit Sidebar Link', 'text_domain' ),
+		'update_item'           => __( 'Update Sidebar Link', 'text_domain' ),
+		'view_item'             => __( 'View Sidebar Link', 'text_domain' ),
+		'search_items'          => __( 'Search Sidebar Link', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'items_list'            => __( 'Sidebar Links list', 'text_domain' ),
+		'items_list_navigation' => __( 'Sidebar Links list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter Sidebar Links list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Sidebar Link', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Sidebar Link', $args );
+
+}
+add_action( 'init', 'sidebar_link_post_type', 0 );
+
+
+//New Sidebar
+
+function page_widgets_init() {
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar', 'eyelikedesign' ),
+		'id' => 'sidebar-page',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
+	) );
+	}
+add_action( 'widgets_init', 'page_widgets_init' );
