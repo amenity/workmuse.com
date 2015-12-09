@@ -114,27 +114,30 @@ span.amarillo {
   text-shadow: none;
 }
 
+.three.columns.hex {
+    padding: 0;
+    margin-left: -1em;
+}
+
 .hexCol {
   padding: 0;
   margin: 0 0 0 -20px;
 }
 
 .hexImage {
-  margin-bottom: -101.5%;
-  width: 100%;
+  margin-bottom: -101%;
+  width: 98%;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 789px) {
+@media only screen and (max-width: 767px){
   .hexImage {
-    margin-bottom: -102.5%;
+    margin-bottom: -100%;
   }
+  .three.columns.hex {
+    margin-left: 0;
+}
 }
 
-@media only screen (max-width: 766px) {
-  .hexImage {
-    margin-bottom: -100.3%;
-  }
-}
 .svgMask {
   fill: white;
 }
