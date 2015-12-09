@@ -34,7 +34,7 @@ get_header(); ?>
 		</div><!-- /#main -->
 		<aside id="sidebar" class="four columns" role="complementary">
 			<div class="sidebar-box">
-				<?php get_sidebar(); ?>
+				<?php get_sidebar('page'); ?>
 			</div>
 		</aside><!-- /#sidebar -->
 	</div><!-- End Content row -->
