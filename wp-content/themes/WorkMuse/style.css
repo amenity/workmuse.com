@@ -524,7 +524,9 @@ a:hover, #footer a:hover {
 }
 
 /*Archive styles*/
-
+body.blog #content, body.archive #content {
+  margin-top:40px;
+} 
 
 /*Footer*/
 #footer {
