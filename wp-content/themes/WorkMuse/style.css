@@ -531,7 +531,6 @@ body.blog #content, body.archive #content {
 /*Page sidebar*/
 aside#sidebar {
   background-color: #323131;
-  margin-top: 1.5em;
 }
 
 #secondary .hexImage {
@@ -560,10 +559,11 @@ aside#sidebar {
 .hexTestimonial {
   min-height: 135px;
 }
+
 .hexTestimonial p{
   color: #FFFDFD;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 1.2em;
   margin: .3em 3em;
   text-align: center;
   z-index: 100;

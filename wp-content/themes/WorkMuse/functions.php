@@ -256,3 +256,9 @@ function page_widgets_init() {
 	) );
 	}
 add_action( 'widgets_init', 'page_widgets_init' );
+
+//Custom media sizes
+function featured_image_crop_setup() {
+	add_image_size ( 'featured', 2000, 600, true );
+}
+add_action( 'after_setup_theme', 'featured_image_crop_setup' );

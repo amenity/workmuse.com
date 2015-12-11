@@ -86,15 +86,15 @@
 					<?php get_template_part( 'nav', 'top-bar' ); ?>
 					</div>
 				</div>
-				
-
-				<?php
-					/**
-					 * Include our custom-header.php
-					 *
-					 * Used with the header image stuff.
-					 */
-					get_template_part( 'custom-header' );
-				?>
 			</header>
-		</div><!-- // header.php -->
+		</div>
+		<!-- Custom header outside row -->
+		<?php
+			/**
+			 * Include our custom-header.php
+			 *
+			 * Used with the header image stuff.
+			 */
+			get_template_part( 'custom-header' );
+		?>
+		<!-- // header.php -->
