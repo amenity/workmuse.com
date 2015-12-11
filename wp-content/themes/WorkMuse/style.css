@@ -543,6 +543,14 @@ aside#sidebar {
   fill: #323131;
 }
 
+.hexVideo {
+  padding-bottom: 1em;
+}
+
+.hexWrap {
+  padding-bottom: 5.5em;
+}
+
 .hexMotif {
   margin: 1.84em;
   margin-bottom: -70%;
@@ -550,17 +558,12 @@ aside#sidebar {
 }
 
 .hexTestimonial p{
-  color: #383838;
+  color: #FFFDFD;
   font-style: normal;
   font-size: 1.2em;
-  font-weight: bold;
   margin: 1em 4em;
   text-align: center;
   z-index: 100;
-}
-
-.hexSecond {
-  margin-top: 6em;
 }
 
 /*Footer*/

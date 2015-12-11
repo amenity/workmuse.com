@@ -9,7 +9,7 @@
         <!-- START: sidebar.php -->
 		<div id="secondary" class="widget-area" role="complementary">
             <!-- Video Link -->
-            <div class="hexVideo">
+            <div class="hexVideo dottedBorder bottomDots">
               <?php     
                   $args = array(                       
                         'post_type'     => 'sidebarlink',
@@ -42,7 +42,7 @@
             ?>
             </div>
             <!-- Testimonial Query -->
-            <div class="hexWrap">
+            <div class="hexWrap dottedBorder bottomDots">
                 <img src="<?php echo get_stylesheet_directory_uri().'/images/hex_motif_yellow.svg'; ?>" class="hexMotif"/>
                 <div class="hexTestimonial">
                     <?php     /**
