@@ -557,13 +557,22 @@ aside#sidebar {
   z-index: -100;
 }
 
+.hexTestimonial {
+  min-height: 115px;
+}
 .hexTestimonial p{
   color: #FFFDFD;
   font-style: normal;
-  font-size: 1.2em;
-  margin: 1em 4em;
+  font-size: 1.4vw;
+  margin: .3em 3em;
   text-align: center;
   z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .hexTestimonial p{
+    font-size: 5.5vw;
+  }
 }
 
 /*Footer*/
