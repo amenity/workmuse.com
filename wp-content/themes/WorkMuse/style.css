@@ -530,7 +530,7 @@ body.blog #content, body.archive #content {
 
 /*Page sidebar*/
 aside#sidebar {
-  background-color: #383838;
+  background-color: #323131;
   margin-top: 1.5em;
 }
 
@@ -540,7 +540,7 @@ aside#sidebar {
 }
 
 #secondary .svgMask {
-  fill: #383838;
+  fill: #323131;
 }
 
 .hexMotif {
@@ -550,7 +550,7 @@ aside#sidebar {
 }
 
 .hexTestimonial p{
-  color: #FFFDFD;
+  color: #383838;
   font-style: normal;
   font-size: 1.2em;
   font-weight: bold;
