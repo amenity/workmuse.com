@@ -135,7 +135,7 @@ span.amarillo {
   }
   .three.columns.hex {
     margin-left: 0;
-}
+  }
 }
 
 .svgMask {
@@ -281,7 +281,7 @@ input#searchsubmit {
 
 /*Secondary Sidebar*/
 div#secondary {
-  margin-top: 1.5em; 
+  margin: 1.25em auto 2em;
 }
 
 /*Only for Nav Resets*/
@@ -323,7 +323,7 @@ a:hover, #footer a:hover {
   background-color: #323131;
   border: none;
   border-radius: 3px;
-  box-shadow: 2.5px 2.5px 0px rgba(15, 185, 236, 0.8);
+  box-shadow: 2.5px 2.5px 0px rgb(139, 203, 205);
   font-size: 1.5em;
   margin: 20px;
   padding: 15px 25px;
@@ -523,10 +523,45 @@ a:hover, #footer a:hover {
   box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
 }
 
-/*Archive styles*/
+/*Archive*/
 body.blog #content, body.archive #content {
   margin-top:40px;
 } 
+
+/*Page sidebar*/
+aside#sidebar {
+  background-color: #383838;
+  margin-top: 1.5em;
+}
+
+#secondary .hexImage {
+  margin-bottom: -100%;
+  margin-left: 1px;
+}
+
+#secondary .svgMask {
+  fill: #383838;
+}
+
+.hexMotif {
+  margin: 1.84em;
+  margin-bottom: -70%;
+  z-index: -100;
+}
+
+.hexTestimonial p{
+  color: #FFFDFD;
+  font-style: normal;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 4em;
+  text-align: center;
+  z-index: 100;
+}
+
+.hexSecond {
+  margin-top: 6em;
+}
 
 /*Footer*/
 #footer {
@@ -543,7 +578,6 @@ body.blog #content, body.archive #content {
   font-weight: 300;
   text-transform: none;
 }
-
 
 .social a {
   float: right;
@@ -595,6 +629,7 @@ body.blog #content, body.archive #content {
 #footer p, #footer a {
   color: #FFFDFD;
   text-shadow: 1px 1px 1px #212121;
+  letter-spacing: 0.1em;
 }
 
 #footer p {  
@@ -610,9 +645,6 @@ body.blog #content, body.archive #content {
 }
 
 @media only screen and (min-width: 898px) {
-  #footer p, #footer a{
-    text-align: justify;
-  }
 
   #footer p span:last-child:after {
     content: "";
