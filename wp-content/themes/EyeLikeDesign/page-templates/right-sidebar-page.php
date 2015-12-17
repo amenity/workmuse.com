@@ -32,7 +32,7 @@ get_header(); ?>
 			</div>
 
 		</div><!-- /#main -->
-		<aside id="sidebar" class="four columns" role="complementary">
+		<aside id="sidebar" class="four columns page" role="complementary">
 			<div class="sidebar-box">
 				<?php get_sidebar('page'); ?>
 			</div>
