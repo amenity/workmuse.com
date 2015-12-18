@@ -22,6 +22,8 @@ body {
 	background-color: #FFFDFD;
 }
 
+p, li {font-size:13px;}
+
 body, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   color: #212121;
@@ -37,6 +39,17 @@ h1, h2.entry-title  {
   color: #8BCBCD;
   font-size: 4.8rem; 
 }
+
+.charcoal {background-color:#323131; color:#fffdfd; padding:30px 0;}
+.charcoal .svgMask {fill:#323131;}
+.putty {background-color: #fffdfd; padding:30px 0;}
+.charcoal h3 {color:#8BCBCD;}
+.putty .svgMask {fill:#fffdfd;}
+.putty .hex, .charcoal .hex {position:relative;}
+.putty .hex svg, .charcoal .hex svg { position: absolute;top: 0;right: 0;width: 101%; height:101%;}
+.charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
+.putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
+.charcoal h3, .putty h3 {color:#f1c200;}
 
 @media only screen and (min-width: 768px) {
   h1, h2.entry-title  {
@@ -284,6 +297,7 @@ div#secondary {
   margin: 1.25em auto 2em;
 }
 
+
 /*Only for Nav Resets*/
 @media only screen and (max-width: 926px) {
   #site-title {line-height: .5; margin-bottom: 0;}
@@ -359,6 +373,7 @@ a:hover, #footer a:hover {
 /*Home Page Syles*/
 .hero{
 	position: relative;
+  margin-bottom: -2px;
 }
 
 .heroOverlay {
@@ -387,14 +402,14 @@ a:hover, #footer a:hover {
 }
 
 .heroOverlay h3 {
-	color: #212121;
+	color: #8BCBCD;
 	font-size: 350%;
 	font-weight: 100;
 	font-family: 'Fjalla One', sans-serif;
 	letter-spacing: 0.08em;
-	text-transform: uppercase;
-  text-shadow: 2px 2px 0px rgb(139, 203, 205);
   margin-top: 0;
+	text-transform: uppercase;
+  text-shadow: 1px 1px 1px #212121;
 }
 
 .sectionPre {
@@ -466,18 +481,24 @@ a:hover, #footer a:hover {
   }
 }
 
-.sectionStatistic p {
+.sectionStatistic p, .sectionStatistic p>a{
+  color: #FFFDFD;
   font-family: 'Fjalla One', sans-serif;
   font-size: 2rem;
   font-weight: 100;
   text-transform: uppercase;
 }
 
+.sectionStatistic:hover a{
+  color: #f1c200;
+}
+
 .sectionStatistic strong {
   color: #8BCBCD;
 }
 
-.sectionStatistic h2{
+.sectionStatistic h2, .sectionStatistic h2 a {
+  color: #f1c200;
   font-family: 'Fjalla One', sans-serif;
   font-size: 6rem;
   font-weight: 100;
@@ -529,9 +550,9 @@ body.blog #content, body.archive #content {
 } 
 
 /*Page sidebar*/
-aside#sidebar {
-  background-color: #383838;
-  margin-top: 1.5em;
+aside#sidebar.page {
+  background-color: #323131;
+  margin-top:-2px;
 }
 
 #secondary .hexImage {
@@ -540,7 +561,15 @@ aside#sidebar {
 }
 
 #secondary .svgMask {
-  fill: #383838;
+  fill: #323131;
+}
+
+.hexVideo {
+  padding-bottom: 1em;
+}
+
+.hexWrap {
+  padding-bottom: 5.5em;
 }
 
 .hexMotif {
@@ -549,18 +578,23 @@ aside#sidebar {
   z-index: -100;
 }
 
+.hexTestimonial {
+  min-height: 135px;
+}
+
 .hexTestimonial p{
   color: #FFFDFD;
   font-style: normal;
   font-size: 1.2em;
-  font-weight: bold;
-  margin: 1em 4em;
+  margin: .3em 3em;
   text-align: center;
   z-index: 100;
 }
 
-.hexSecond {
-  margin-top: 6em;
+@media only screen and (max-width: 768px) {
+  .hexTestimonial p{
+    font-size: 5.5vw;
+  }
 }
 
 /*Footer*/

@@ -33,6 +33,9 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php endwhile; // end of the loop. ?>
+					<div class="definition twelve columns text-center">
+						<?php the_field('opening_definition'); ?>
+					</div>
 
 					<?php
 					//Begin Image and Text Section
@@ -74,7 +77,7 @@ get_header(); ?>
 					?>
 					
 					<div class="definition twelve columns text-center">
-						<?php the_field('definition'); ?>
+						<?php the_field('closing_definition'); ?>
 					</div>
 			</div>
 
