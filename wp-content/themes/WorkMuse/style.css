@@ -22,7 +22,7 @@ body {
 	background-color: #FFFDFD;
 }
 
-p {font-size:13px;}
+p, li {font-size:13px;}
 
 body, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -373,6 +373,7 @@ a:hover, #footer a:hover {
 /*Home Page Syles*/
 .hero{
 	position: relative;
+  margin-bottom: -2px;
 }
 
 .heroOverlay {
@@ -401,14 +402,14 @@ a:hover, #footer a:hover {
 }
 
 .heroOverlay h3 {
-	color: #212121;
+	color: #8BCBCD;
 	font-size: 350%;
 	font-weight: 100;
 	font-family: 'Fjalla One', sans-serif;
 	letter-spacing: 0.08em;
-	text-transform: uppercase;
-  text-shadow: 2px 2px 0px rgb(139, 203, 205);
   margin-top: 0;
+	text-transform: uppercase;
+  text-shadow: 1px 1px 1px #212121;
 }
 
 .sectionPre {
@@ -480,18 +481,24 @@ a:hover, #footer a:hover {
   }
 }
 
-.sectionStatistic p {
+.sectionStatistic p, .sectionStatistic p>a{
+  color: #FFFDFD;
   font-family: 'Fjalla One', sans-serif;
   font-size: 2rem;
   font-weight: 100;
   text-transform: uppercase;
 }
 
+.sectionStatistic:hover a{
+  color: #f1c200;
+}
+
 .sectionStatistic strong {
   color: #8BCBCD;
 }
 
-.sectionStatistic h2{
+.sectionStatistic h2, .sectionStatistic h2 a {
+  color: #f1c200;
   font-family: 'Fjalla One', sans-serif;
   font-size: 6rem;
   font-weight: 100;
