@@ -160,7 +160,16 @@ span.amarillo {
 }
 
 .svgMask {
-  fill: white;
+  fill: #FFFDFD;
+}
+
+ul.page-numbers li a {
+  color: #80827E;
+}
+
+ul.page-numbers li span.current, ul.page-numbers li:hover a, ul.page-numbers li a:focus {
+  background: none;
+  color: #8BCBCD;
 }
 
 /*Header*/
@@ -552,7 +561,27 @@ a:hover, #footer a:hover {
   box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
 }
 
-/*Archive*/
+/*Blog & Archive*/
+body.singular #content {
+  margin-top: 20px;
+}
+
+.singular h1.entry-title {
+  color: #FDD43A;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.1rem;
+  line-height: 1.25;
+}
+
+.entry-meta h4 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+#commentform .button {
+  margin-left: 0;
+}
+
 body.blog #content, body.archive #content {
   margin-top:40px;
 } 
