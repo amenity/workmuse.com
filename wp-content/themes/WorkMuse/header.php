@@ -54,6 +54,14 @@
 	 */
 	wp_head();
 ?>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/javascripts/jquery.matchHeight.min.js"></script>	
+<script>
+(function($) {
+	$(function() {
+    $('.matchHeight').matchHeight();
+});
+})(jQuery);
+</script>
 </head>
 <body <?php body_class(); ?>>
 	<!-- Start the main container -->
