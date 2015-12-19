@@ -592,7 +592,7 @@ aside#sidebar.page {
 }
 
 #secondary .hexImage {
-  margin-bottom: -100%;
+  margin-bottom: -103%;
   margin-left: 1px;
 }
 
@@ -600,22 +600,26 @@ aside#sidebar.page {
   fill: #323131;
 }
 
-.hexVideo {
-  padding-bottom: 1em;
+.hexSide:first-child {
+  padding-bottom: 1.25em;
+}
+
+.hexSide:last-child {
+  padding-top: 0.75em;
 }
 
 .hexWrap {
-  padding-bottom: 5.5em;
+  position: relative;
 }
 
 .hexMotif {
-  margin: 1.84em;
-  margin-bottom: -70%;
+  margin: 10%;
   z-index: -100;
 }
 
 .hexTestimonial {
-  min-height: 135px;
+  position: absolute;
+  top: 30%;
 }
 
 .hexTestimonial p{
