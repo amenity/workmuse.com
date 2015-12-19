@@ -464,6 +464,9 @@ a:hover, #footer a:hover {
   border-left: 9999px solid #8BCBCD;
   box-shadow: 9999px 0 0 #8BCBCD;
 }
+.sectionImg {
+  text-align: center;
+}
 
 .sectionText {
   line-height: 1.8;
