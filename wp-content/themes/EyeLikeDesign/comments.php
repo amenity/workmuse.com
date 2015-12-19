@@ -99,8 +99,8 @@
 			<label for="comment"><?php _e('Comment', 'eyelikedesign' ); ?></label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
 		</p>
-		<p id="allowed_tags" class="small"><?php _e('You can use these tags: ', 'eyelikedesign' ); ?><code><?php echo allowed_tags(); ?></code></p>
-		<p><input name="submit" class="<?php echo esc_attr( apply_filters( 'eld_comment_button_classes', 'button' ) ); ?>" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'eyelikedesign' ); ?>"></p>
+<!-- 		<p id="allowed_tags" class="small"><?php _e('You can use these tags: ', 'eyelikedesign' ); ?><code><?php echo allowed_tags(); ?></code></p> -->	
+ 	<p><input name="submit" class="<?php echo esc_attr( apply_filters( 'eld_comment_button_classes', 'button' ) ); ?>" type="submit" id="submit" tabindex="5" value="<?php _e('Submit Comment', 'eyelikedesign' ); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action('comment_form', $post->ID); ?>
 	</form>

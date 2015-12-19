@@ -403,7 +403,7 @@ if ( ! function_exists( 'eyelikedesign_posted_on' ) ) :
  * @since EyeLikeDesign 0.3.0
  */
 function eyelikedesign_posted_on() {
-	printf( __( '<h6>Posted by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span> on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></h6>', 'eyelikedesign' ),
+	printf( __( '<h4><time class="entry-date" datetime="%3$s">%4$s</time></h4>', 'eyelikedesign' ),
 		esc_url( get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')) ),
 		esc_attr( get_the_time() ),
 		esc_attr( get_the_date( 'c' ) ),

@@ -96,18 +96,6 @@ h4 {
   letter-spacing: 0.03em;
 }
 
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.8rem; 
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 3rem; 
-  } 
-}
-
 blockquote {
   border-left: 3px solid rgba(139, 203, 205, 0.5);
   margin: 1.5em 0;
@@ -160,7 +148,16 @@ span.amarillo {
 }
 
 .svgMask {
-  fill: white;
+  fill: #FFFDFD;
+}
+
+ul.page-numbers li a {
+  color: #80827E;
+}
+
+ul.page-numbers li span.current, ul.page-numbers li:hover a, ul.page-numbers li a:focus {
+  background: none;
+  color: #8BCBCD;
 }
 
 /*Header*/
@@ -552,7 +549,27 @@ a:hover, #footer a:hover {
   box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
 }
 
-/*Archive*/
+/*Blog & Archive*/
+body.single-post #content {
+  margin-top: 20px;
+}
+
+.single-post h1.entry-title {
+  color: #FDD43A;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.1rem;
+  line-height: 1.25;
+}
+
+.entry-meta h4 {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+#commentform .button {
+  margin-left: 0;
+}
+
 body.blog #content, body.archive #content {
   margin-top:40px;
 } 
@@ -560,7 +577,15 @@ body.blog #content, body.archive #content {
 /*Page sidebar*/
 aside#sidebar.page {
   background-color: #323131;
-  margin-top:-2px;
+  border: #F8F6EC solid 6px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(50, 49, 49, 0.2);
+}
+
+@media only screen and (min-width: 769px) {
+  aside#sidebar.page {
+    margin-top: -2.5em;
+  }
 }
 
 #secondary .hexImage {
