@@ -102,12 +102,6 @@ h4 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  h2 {
-    font-size: 3rem; 
-  } 
-}
-
 blockquote {
   border-left: 3px solid rgba(139, 203, 205, 0.5);
   margin: 1.5em 0;
@@ -562,11 +556,11 @@ a:hover, #footer a:hover {
 }
 
 /*Blog & Archive*/
-body.singular #content {
+body.single-post #content {
   margin-top: 20px;
 }
 
-.singular h1.entry-title {
+.single-post h1.entry-title {
   color: #FDD43A;
   font-family: 'Montserrat', sans-serif;
   font-size: 3.1rem;
