@@ -605,10 +605,11 @@ aside#sidebar.page {
 }
 
 .hexSide:last-child {
-  padding-top: 0.75em;
+  padding-top: .7em;
 }
 
 .hexWrap {
+  padding: .25em 0 .4em;
   position: relative;
 }
 
@@ -625,15 +626,24 @@ aside#sidebar.page {
 .hexTestimonial p{
   color: #FFFDFD;
   font-style: normal;
-  font-size: 1.2em;
-  margin: .3em 3em;
+  font-size: 1.1em;
+  margin: 0 2.75em;
   text-align: center;
   z-index: 100;
 }
 
+p.testifier {
+  font-style: italic;
+  margin-top: 0;
+}
+
+p.testifier:before {
+  content: "-";
+}
+
 @media only screen and (max-width: 768px) {
   .hexTestimonial p{
-    font-size: 5.5vw;
+    font-size: 1.5em;
   }
 }
 
