@@ -686,7 +686,11 @@ p.testifier:before {
 
 .social a {
   float: right;
-  margin: 1em;
+  margin: 0.7em;
+}
+
+.social a:first-child {
+  margin-right: 0;
 }
 
 .social img {
