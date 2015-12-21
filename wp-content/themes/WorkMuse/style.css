@@ -572,7 +572,8 @@ body.single-post #content {
 .single-post h1.entry-title {
   color: #FDD43A;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   line-height: 1.25;
 }
 
@@ -588,6 +589,14 @@ body.single-post #content {
 body.blog #content, body.archive #content {
   margin-top:40px;
 } 
+
+.blog .post-box hr {
+  padding-top: 16px;
+}
+
+div.sharedaddy h3.sd-title:before {
+  border-top: none !important;
+}
 
 /*Page sidebar*/
 aside#sidebar.page {

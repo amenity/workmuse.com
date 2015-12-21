@@ -118,7 +118,7 @@ add_action('wp_enqueue_scripts', 'eyelikedesign_starter_scripts');
  * @return string HTML link with text and permalink to the post/page/cpt
  */
 function eyelikedesign_continue_reading_link() {
-	return ' <a class="read-more" href="'. esc_url( get_permalink() ) . '">' . __( '&nbsp; Read more...', 'eyelikedesign' ) . '</a>';
+	return ' <a class="read-more" href="'. esc_url( get_permalink() ) . '">' . __( '&nbsp; Read more', 'eyelikedesign' ) . '</a>';
 }
 
 /**
