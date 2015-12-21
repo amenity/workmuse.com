@@ -16,9 +16,11 @@ get_header(); ?>
 		
 				<?php
 				$i = 1;
+				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				query_posts( array(
-					'posts_per_page' => -1,
-					'post_type' => 'case-studies'
+					'posts_per_page' => 4,
+					'post_type' => 'case-studies',
+					'paged' => $paged,
 					) );
 				if( have_posts() ) :?>
 				<?php while ( have_posts() ) : the_post(); ?>

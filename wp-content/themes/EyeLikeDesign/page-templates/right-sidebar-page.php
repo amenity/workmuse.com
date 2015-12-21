@@ -12,7 +12,7 @@ get_header(); ?>
 	<!-- Row for main content area -->
 	<div id="content" class="row">
 
-		<div id="main" class="eight columns matchHeight" role="main">
+		<div id="main" class="eight columns" role="main">
 
 			<div class="post-box">
 
@@ -32,7 +32,7 @@ get_header(); ?>
 			</div>
 
 		</div><!-- /#main -->
-		<aside id="sidebar" class="four columns page matchHeight" role="complementary">
+		<aside id="sidebar" class="four columns page" role="complementary">
 			<div class="sidebar-box">
 				<?php get_sidebar('page'); ?>
 			</div>

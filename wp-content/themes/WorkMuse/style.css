@@ -40,24 +40,6 @@ h1, h2.entry-title  {
   font-size: 4.8rem; 
 }
 
-.charcoal {background-color:#323131; color:#fffdfd; padding:30px 0;}
-.charcoal .svgMask {fill:#323131;}
-.putty {background-color: #fffdfd; padding:30px 0;}
-.charcoal h3 {color:#8BCBCD;}
-.putty .svgMask {fill:#fffdfd;}
-.hexCenter {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.putty .hex, .charcoal .hex {position:relative;}
-.putty .hex svg, .charcoal .hex svg { position: absolute;top: -2px;right: 0;width: 101%; height:101%;}
-.charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
-.putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
-.charcoal h3, .putty h3 {color:#f1c200;}
-.post-type-archive-case-studies ul {list-style-position: inside;}
-
-
 
 @media only screen and (min-width: 768px) {
   h1, h2.entry-title  {
@@ -464,6 +446,9 @@ a:hover, #footer a:hover {
   border-left: 9999px solid #8BCBCD;
   box-shadow: 9999px 0 0 #8BCBCD;
 }
+.sectionImg {
+  text-align: center;
+}
 
 .sectionText {
   line-height: 1.8;
@@ -549,6 +534,36 @@ a:hover, #footer a:hover {
   box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
 }
 
+/*Case Studies*/
+.charcoal {background-color:#323131; color:#fffdfd; padding:30px 0;}
+.charcoal .svgMask {fill:#323131;}
+.putty {background-color: #fffdfd; padding:30px 0;}
+.charcoal h3 {color:#8BCBCD;}
+.putty .svgMask {fill:#fffdfd;}
+.putty .hex, .charcoal .hex {position:relative;}
+.putty .hex svg, .charcoal .hex svg { position: absolute;top: -2px;right: 0;width: 101%; height:101%;}
+.charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
+.putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
+.charcoal h3, .putty h3 {color:#f1c200;}
+.post-type-archive-case-studies ul {list-style-position: inside;}
+
+@media only screen and (min-width: 767px) {
+  .hexCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .charcoal .hexCenter {
+    transform: translate(-6%,-50%);
+  }
+  .charcoal .eight.columns {
+    padding-left: 40px;
+  }
+  .putty .eight.columns {
+    padding-right: 40px;
+  }
+}
+
 /*Blog & Archive*/
 body.single-post #content {
   margin-top: 20px;
@@ -597,36 +612,50 @@ aside#sidebar.page {
   fill: #323131;
 }
 
-.hexVideo {
-  padding-bottom: 1em;
+.hexSide:first-child {
+  padding-bottom: 1.25em;
+}
+
+.hexSide:last-child {
+  padding-top: .7em;
 }
 
 .hexWrap {
-  padding-bottom: 5.5em;
+  padding: .25em 0 .4em;
+  position: relative;
 }
 
 .hexMotif {
-  margin: 1.84em;
-  margin-bottom: -70%;
+  margin: 10%;
   z-index: -100;
 }
 
 .hexTestimonial {
-  min-height: 135px;
+  position: absolute;
+  top: 30%;
 }
 
 .hexTestimonial p{
   color: #FFFDFD;
   font-style: normal;
-  font-size: 1.2em;
-  margin: .3em 3em;
+  font-size: 1.1em;
+  margin: 0 2.75em;
   text-align: center;
   z-index: 100;
 }
 
+p.testifier {
+  font-style: italic;
+  margin-top: 0;
+}
+
+p.testifier:before {
+  content: "-";
+}
+
 @media only screen and (max-width: 768px) {
   .hexTestimonial p{
-    font-size: 5.5vw;
+    font-size: 1.5em;
   }
 }
 
