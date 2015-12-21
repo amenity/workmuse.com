@@ -572,7 +572,8 @@ body.single-post #content {
 .single-post h1.entry-title {
   color: #FDD43A;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.1rem;
+  font-size: 3rem;
+  font-weight: bold;
   line-height: 1.25;
 }
 
@@ -588,6 +589,14 @@ body.single-post #content {
 body.blog #content, body.archive #content {
   margin-top:40px;
 } 
+
+.blog .post-box hr {
+  padding-top: 16px;
+}
+
+div.sharedaddy h3.sd-title:before {
+  border-top: none !important;
+}
 
 /*Page sidebar*/
 aside#sidebar.page {
@@ -677,7 +686,11 @@ p.testifier:before {
 
 .social a {
   float: right;
-  margin: 1em;
+  margin: 0.7em;
+}
+
+.social a:first-child {
+  margin-right: 0;
 }
 
 .social img {
@@ -753,4 +766,37 @@ p.testifier:before {
   content: " •";
   color: #F15C38;
   font-size: 1.25em;
+}
+
+/*Forms*/
+/*Crazy excessive tip to remove bullets */
+.gform_body ul, .gform_body ul li {
+  list-style-type: none !important;
+  list-style-image: none !important;
+  list-style: none !important;
+}
+
+.gform_wrapper form .gform_body ul > li:before {
+  content: "";
+}
+
+.field_description_below {
+  margin-bottom: 2em;
+  line-height: 1.75;
+
+}
+
+.gform_body ul li label.gfield_label {
+  color:#FDD43A;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: -16px !important;
+}
+
+.gform_body ul li label {
+  display: inline-block;
+}
+
+.gform_body {
+  padding-right: 3em;
 }

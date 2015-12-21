@@ -44,16 +44,19 @@
 					<div class="social four columns">
 						<div>
 							<a href="https://twitter.com/work_muse">
-					    	<img title="Twitter" alt="Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" width="32" height="32" />
+					    	<img title="Twitter" alt="Twitter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter.png" width="30" height="30" />
 					    </a>
 					    <a href="https://www.facebook.com/workmuse">
-					    	<img title="Facebook" alt="Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" width="32" height="32" />
+					    	<img title="Facebook" alt="Facebook" src="<?php echo get_stylesheet_directory_uri(); ?>/images/facebook.png" width="30" height="30" />
 					    </a>
 					    <a href="https://instagram.com/workmuse/">
-					    	<img title="Instagram" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram.png" width="32" height="32" />
+					    	<img title="Instagram" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/instagram.png" width="30" height="30" />
 					    </a>
 					    <a href="https://www.youtube.com/channel/UCijMmo84Je7nrXZ7x-9rEvw">
-					    	<img title="YouTube" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png" width="32" height="32" />
+					    	<img title="YouTube" alt="RSS" src="<?php echo get_stylesheet_directory_uri(); ?>/images/youtube.png" width="30" height="30" />
+					    </a>
+					    <a href="https://www.linkedin.com/company/10345451?trk=tyah&trkInfo=tarId%3A1449609882283%2Ctas%3Awork%20muse%2Cidx%3A4-1-11">
+					    	<img title="LinkedIn" alt="LinkedIn" src="<?php echo get_stylesheet_directory_uri(); ?>/images/linkedin.png" width="30" height="30" />
 					    </a>
 					  </div>
 					</div>
