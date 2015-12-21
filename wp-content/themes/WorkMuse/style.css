@@ -572,7 +572,7 @@ body.single-post #content {
 .single-post h1.entry-title {
   color: #FDD43A;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1.25;
 }
@@ -766,4 +766,35 @@ p.testifier:before {
   content: " •";
   color: #F15C38;
   font-size: 1.25em;
+}
+
+/*Forms*/
+/*Crazy excessive tip to remove bullets */
+.gform_body ul, .gform_body ul li {
+  list-style-type: none !important;
+  list-style-image: none !important;
+  list-style: none !important;
+}
+
+.gform_wrapper form .gform_body ul > li:before {
+  content: "";
+}
+
+.field_description_below {
+  margin-bottom: 2em;
+}
+
+.gform_body ul li label.gfield_label {
+  color:#FDD43A;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: -16px !important;
+}
+
+.gform_body ul li label {
+  display: inline-block;
+}
+
+.gform_body {
+  padding-right: 3em;
 }
