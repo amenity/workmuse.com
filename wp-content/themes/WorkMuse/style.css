@@ -40,24 +40,6 @@ h1, h2.entry-title  {
   font-size: 4.8rem; 
 }
 
-.charcoal {background-color:#323131; color:#fffdfd; padding:30px 0;}
-.charcoal .svgMask {fill:#323131;}
-.putty {background-color: #fffdfd; padding:30px 0;}
-.charcoal h3 {color:#8BCBCD;}
-.putty .svgMask {fill:#fffdfd;}
-.hexCenter {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.putty .hex, .charcoal .hex {position:relative;}
-.putty .hex svg, .charcoal .hex svg { position: absolute;top: -2px;right: 0;width: 101%; height:101%;}
-.charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
-.putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
-.charcoal h3, .putty h3 {color:#f1c200;}
-.post-type-archive-case-studies ul {list-style-position: inside;}
-
-
 
 @media only screen and (min-width: 768px) {
   h1, h2.entry-title  {
@@ -550,6 +532,36 @@ a:hover, #footer a:hover {
 
 .homeButtons .button:hover{
   box-shadow: 3.5px 3.5px 0px rgb(241, 92, 56);
+}
+
+/*Case Studies*/
+.charcoal {background-color:#323131; color:#fffdfd; padding:30px 0;}
+.charcoal .svgMask {fill:#323131;}
+.putty {background-color: #fffdfd; padding:30px 0;}
+.charcoal h3 {color:#8BCBCD;}
+.putty .svgMask {fill:#fffdfd;}
+.putty .hex, .charcoal .hex {position:relative;}
+.putty .hex svg, .charcoal .hex svg { position: absolute;top: -2px;right: 0;width: 101%; height:101%;}
+.charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
+.putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
+.charcoal h3, .putty h3 {color:#f1c200;}
+.post-type-archive-case-studies ul {list-style-position: inside;}
+
+@media only screen and (min-width: 767px) {
+  .hexCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .charcoal .hexCenter {
+    transform: translate(-6%,-50%);
+  }
+  .charcoal .eight.columns {
+    padding-left: 40px;
+  }
+  .putty .eight.columns {
+    padding-right: 40px;
+  }
 }
 
 /*Blog & Archive*/
