@@ -321,19 +321,17 @@ a:hover, #footer a:hover {
 }
 
 article ul, .content ul  {
-    list-style: none;
-    padding:0;
-    margin:0;
+  list-style: none;
 }
 
-article li, .content li { 
-    padding-left: 1em; 
-    text-indent: -.7em;
+article ul li, .content ul li { 
+  padding-left: 1em; 
+  text-indent: -.7em;
 }
 
-article li:before, .content li:before {
-    content: "• ";
-    color: #F15C38; /* or whatever color you prefer */
+article ul li:before, .content ul li:before {
+  content: "• ";
+  color: #F15C38; 
 }
 
 .button {
