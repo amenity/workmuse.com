@@ -643,6 +643,17 @@ body.blog #content, body.archive #content {
 div.sharedaddy h3.sd-title:before {
   border-top: none !important;
 }
+div.sharedaddy h3.sd-title, #respond h3 {
+  font-size: 2rem !important;
+}
+
+article .sd-content ul li { 
+  text-indent: 0;
+}
+
+article .sd-content ul li:before {
+  content: none;
+}
 
 /*Page sidebar*/
 aside#sidebar.page {
