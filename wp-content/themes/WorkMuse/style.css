@@ -647,8 +647,9 @@ div.sharedaddy h3.sd-title, #respond h3 {
   font-size: 2rem !important;
 }
 
-article .sd-content ul li { 
+article .sd-content ul li, article ul.gform_fields li { 
   text-indent: 0;
+  padding-left: 0;
 }
 
 article .sd-content ul li:before {
@@ -840,14 +841,16 @@ p.testifier:before {
 .field_description_below {
   margin-bottom: 2em;
   line-height: 1.75;
+}
 
+ul.gform_fields {
+  margin-left: 0;
 }
 
 .gform_body ul li label.gfield_label {
   color:#FDD43A;
   font-weight: 600;
   text-transform: uppercase;
-  margin-left: -16px !important;
 }
 
 .gform_body ul li label {
@@ -856,4 +859,8 @@ p.testifier:before {
 
 .gform_body {
   padding-right: 3em;
+}
+
+.gfield_required {
+  color: #F15C38;
 }
