@@ -73,7 +73,7 @@
 
 	<?php if ( comments_open() ) : ?>
 <section id="respond">
-	<h3><?php comment_form_title( __('Leave a Reply', 'eyelikedesign' ), __('Leave a Reply to %s', 'eyelikedesign' ) ); ?></h3>
+	<h3><?php comment_form_title( __('Leave a reply', 'eyelikedesign' ), __('Leave a reply to %s', 'eyelikedesign' ) ); ?></h3>
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 	<p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'eyelikedesign' ), wp_login_url( get_permalink() ) ); ?></p>
