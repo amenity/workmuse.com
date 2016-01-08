@@ -18,8 +18,9 @@
             $link = get_field('link', $sidebarlinkid);
             $img = get_field('image', $sidebarlinkid); 
             $img = wp_get_attachment_image_src($img, 'thumbnail' ); 
+            $video = get_field('video');
         ?>      
-        <a href="<?php echo $link ?>" class="lbp_secondary" data-lightboxplus="videolink">
+        <a href="<?php echo $link ?>" <?php if($video ) {echo 'class="lbp_secondary"';} else {echo 'class="lbp_primary"';} ?> data-lightboxplus="videolink">
             <img src="<?php echo $img[0]; ?>" class="hexImage" />
             <svg xml:space="preserve" viewBox="0 0 240 240">
               <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
@@ -58,7 +59,7 @@
             $img = get_field('image', $sidebarlinkid); 
             $img = wp_get_attachment_image_src($img, 'thumbnail' ); 
         ?>      
-        <a href="<?php echo $link ?>" class="lbp_secondary" data-lightboxplus="otherlink">
+        <a href="<?php echo $link ?>" <?php if($video ) {echo 'class="lbp_secondary"';} else {echo 'class="lbp_primary"';} ?> data-lightboxplus="otherlink">
             <img src="<?php echo $img[0]; ?>" class="hexImage" />
             <svg xml:space="preserve" viewBox="0 0 240 240">
               <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8

@@ -314,3 +314,84 @@ function case_studies() {
 
 }
 add_action( 'init', 'case_studies', 0 );
+
+//Shortcode for Sections
+
+function section_func( $atts ) {
+	$id = $atts['id'] - 1; //Start at Zero, Jackass.
+	$id1 = $id + 1;
+	$rows = get_field('section' ); // get all the rows
+	$row = $rows[$id]; // get the first row
+	$test = $row['testimonial_or_custom_content' ]; // get the sub field value 
+	if($test == 'Testimonial') {
+		$testimonial = $row['testimonial'];
+			$image = get_the_post_thumbnail( $testimonial->ID, 'thumbnail', array( 'class' => 'aligncenter') );
+			$content_post = get_post($testimonial->ID);
+			$content = $content_post->post_content;
+			$content = apply_filters('the_content', $content);
+			$content = str_replace(']]>', ']]&gt;', $content);
+			$title = get_the_title($testimonial->ID );
+			$a = '';
+	} else {
+		$img1 = $row['custom_image'];
+		$img = wp_get_attachment_image_src( $img1, 'thumbnail' );
+		$src = wp_get_attachment_image_src($img1, 'full');
+		$image = '<a href="'.$src[0].'" class="lbp_primary" data-lightboxplus="videolink'.$id1.'"><img src='.$img[0].' class="aligncenter" />';
+		$content = $row['custom_content'];
+		$a = '</a>';
+	}	
+		$result .= '<div class="putty">';
+			 if($id1 % 2 != 0) { 
+				$result .= '<div class="six columns matchHeight">
+				<div class="hexCenter">
+				<div class="hex">
+					';
+					 
+						 $result .= $image . ' 
+							<svg xml:space="preserve" viewBox="0 0 240 240">
+							  <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
+		l0.2,95.9c0,5.3-2.8,10.2-7.4,12.8l-82.7,47.7c-4.6,2.7-10.3,2.7-14.9,0l-83-48.1c-4.6-2.6-7.4-7.5-7.4-12.8l-0.1-95.9
+		c0-5.3,2.8-10.2,7.4-12.8l82.7-47.7C114.6,10,117.2,9.4,119.7,9.4z" />
+							</svg>';
+							$result .= $a;
+				$result .='</div>
+				</div>
+				</div>';
+					$result .= '<div class="six columns matchHeight">';
+					if($title) {
+					$result .= '<h3 class="text-center"><span class="grandHotel">'.$title.'</span></h3>';
+					}
+					$result .= $content.'
+				</div><div class="clearfix"></div>';
+			 } else { 
+				//Opposite of above. Content first. Image second.
+
+			 				$result .= '<div class="six columns matchHeight">';
+			 				if($title) {
+			 				$result .= '<h3 class="text-center"><span class="grandHotel">'.$title.'</span></h3>';
+			 				}
+			 				$result .= $content.'
+			 			</div>';
+
+			 					$result .= '<div class="six columns matchHeight">
+			 					<div class="hexCenter">
+			 					<div class="hex">';
+			 						 
+			 							 $result .= $image . ' 
+			 								<svg xml:space="preserve" viewBox="0 0 240 240">
+			 								  <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
+			 			l0.2,95.9c0,5.3-2.8,10.2-7.4,12.8l-82.7,47.7c-4.6,2.7-10.3,2.7-14.9,0l-83-48.1c-4.6-2.6-7.4-7.5-7.4-12.8l-0.1-95.9
+			 			c0-5.3,2.8-10.2,7.4-12.8l82.7-47.7C114.6,10,117.2,9.4,119.7,9.4z" />
+			 								</svg>';
+			 								$result .= $a;
+			 					$result .='</div>
+			 					</div>
+			 					</div>
+			 			<div class="clearfix"></div>';
+
+			 } 
+			 $result .= '</div>';
+
+	return $result;
+}
+add_shortcode( 'section', 'section_func' );
