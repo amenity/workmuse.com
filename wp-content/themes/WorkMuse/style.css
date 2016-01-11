@@ -365,9 +365,16 @@ article ul li:before, .content ul li:before {
   border-width: 0 0 0 7px;
 }
 
+.rightDots {
+  border-width: 0 7px 0 0;
+}
+
 @media only screen and (max-width: 767px) {
   .leftDots {
     border-width: 7px 0 0 0;
+  }
+  .rightDots {
+    border-width: 0 0 7px 0;
   }
 }
 
@@ -699,7 +706,8 @@ aside#sidebar.page {
 
 .hexTestimonial {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hexTestimonial p{
@@ -723,6 +731,18 @@ p.testifier:before {
 @media only screen and (max-width: 768px) {
   .hexTestimonial p{
     font-size: 1.5em;
+  }
+}
+
+/*Dotted Hex Section */
+.dottedHex .leftDots, .dottedHex .rightDots {
+  padding: 0 25px;
+  text-align: center;
+} 
+
+@media only screen and (min-width: 768px) {
+  .hex.lefty {
+    margin: 0 10px 0 -35px;
   }
 }
 

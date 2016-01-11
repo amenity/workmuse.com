@@ -340,11 +340,11 @@ function section_func( $atts ) {
 		$content = $row['custom_content'];
 		$a = '</a>';
 	}	
-		$result .= '<div class="putty">';
+		$result .= '<div class="putty dottedHex">';
 			 if($id1 % 2 != 0) { 
 				$result .= '<div class="six columns matchHeight">
 				<div class="hexCenter">
-				<div class="hex">
+				<div class="hex lefty">
 					';
 					 
 						 $result .= $image . ' 
@@ -357,7 +357,7 @@ function section_func( $atts ) {
 				$result .='</div>
 				</div>
 				</div>';
-					$result .= '<div class="six columns matchHeight">';
+					$result .= '<div class="six columns matchHeight dottedBorder leftDots">';
 					if($title) {
 					$result .= '<h3 class="text-center"><span class="grandHotel">'.$title.'</span></h3>';
 					}
@@ -366,7 +366,7 @@ function section_func( $atts ) {
 			 } else { 
 				//Opposite of above. Content first. Image second.
 
-			 				$result .= '<div class="six columns matchHeight">';
+			 				$result .= '<div class="six columns matchHeight dottedBorder rightDots">';
 			 				if($title) {
 			 				$result .= '<h3 class="text-center"><span class="grandHotel">'.$title.'</span></h3>';
 			 				}
@@ -375,7 +375,7 @@ function section_func( $atts ) {
 
 			 					$result .= '<div class="six columns matchHeight">
 			 					<div class="hexCenter">
-			 					<div class="hex">';
+			 					<div class="hex righty">';
 			 						 
 			 							 $result .= $image . ' 
 			 								<svg xml:space="preserve" viewBox="0 0 240 240">
