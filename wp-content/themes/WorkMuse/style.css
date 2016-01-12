@@ -604,9 +604,14 @@ ul.accordion>li.active .content {
   .hexCenter {
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
   .charcoal .hexCenter {
+    -webkit-transform: translate(-6%,-50%);
+    -ms-transform: translate(-6%,-50%);
     transform: translate(-6%,-50%);
   }
   .charcoal .eight.columns {
@@ -707,6 +712,8 @@ aside#sidebar.page {
 .hexTestimonial {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
