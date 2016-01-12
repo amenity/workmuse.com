@@ -741,15 +741,36 @@ p.testifier:before {
   }
 }
 
+/*Testimonial Lightbox */
+
+
 /*Dotted Hex Section */
 .dottedHex .leftDots, .dottedHex .rightDots {
   padding: 0 25px;
-  text-align: center;
 } 
+
+.dottedHex p {
+  font-size: 11.5px;
+}
+
+.putty.dottedHex h3 span.grandHotel {
+  color: #8BCBCD;
+}
+
+.dottedHex .rightDots {
+  text-align: right;
+}
 
 @media only screen and (min-width: 768px) {
   .hex.lefty {
     margin: 0 10px 0 -35px;
+  }
+  .hex.righty {
+    margin: 0 -35px 0 0;
+  }
+  .putty .eight.columns.rightDots {
+    padding-right: 27px;
+    margin-left: -60px
   }
 }
 
