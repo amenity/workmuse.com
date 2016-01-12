@@ -342,7 +342,7 @@ function section_func( $atts ) {
 	}	
 		$result .= '<div class="putty dottedHex">';
 			 if($id1 % 2 != 0) { 
-				$result .= '<div class="four columns matchHeight">
+				$result .= '<div class="four columns">
 				<div class="hexCenter">
 				<div class="hex lefty">
 					';
@@ -357,23 +357,24 @@ function section_func( $atts ) {
 				$result .='</div>
 				</div>
 				</div>';
-					$result .= '<div class="eight columns matchHeight dottedBorder leftDots">';
+					$result .= '<div class="eight columns dottedBorder leftDots">
+						<div class="innerFix">';
 					if($title) {
 					$result .= '<h3 class="text-center"><span class="grandHotel">'.$title.'</span></h3>';
 					}
 					$result .= $content.'
-				</div><div class="clearfix"></div>';
+				</div></div><div class="clearfix"></div>';
 			 } else { 
 				//Opposite of above. Content first. Image second.
 
-			 				$result .= '<div class="eight columns matchHeight dottedBorder rightDots">';
+			 				$result .= '<div class="eight columns dottedBorder rightDots"><div class="innerFix">';
 			 				if($title) {
 			 				$result .= '<h3 class="text-center"><span class="grandHotel">'.$title.'</span></h3>';
 			 				}
 			 				$result .= $content.'
-			 			</div>';
+			 			</div></div>';
 
-			 					$result .= '<div class="four columns matchHeight">
+			 					$result .= '<div class="four columns">
 			 					<div class="hexCenter">
 			 					<div class="hex righty">';
 			 						 

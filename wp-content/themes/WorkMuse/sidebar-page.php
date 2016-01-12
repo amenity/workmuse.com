@@ -21,7 +21,7 @@
             
             $video = get_field('video', $sidebarlinkid);
         ?>      
-        <a href="<?php echo $link ?>" <?php if($video > 0) {echo 'class="lbp_secondary"';} else {echo 'class="lbp_primary"';} ?> data-lightboxplus="videolink">
+        <a href="<?php echo $link ?>?rel=0" <?php if($video > 0) {echo 'class="lbp_secondary"';} else {echo 'class="lbp_primary"';} ?> data-lightboxplus="videolink">
             <img src="<?php echo $img[0]; ?>" class="hexImage" />
             <svg xml:space="preserve" viewBox="0 0 240 240">
               <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
@@ -35,7 +35,7 @@
     </div>
     <!-- Testimonial -->
     <div class="hexWrap dottedBorder bottomDots">
-    <a class="lbp-inline-link-1" href="#">
+    <a data-reveal-id="myModal" href="#" class="modalReveal">
         <img src="<?php echo get_stylesheet_directory_uri().'/images/hex_motif_yellow.svg'; ?>" class="hexMotif"/>
         <div class="hexTestimonial">
             <?php
@@ -51,11 +51,9 @@
         </a>
     </div>
 <!-- Inline Flyout -->
-    <div style="display:none" class="group">
-        <div id="lbp-inline-href-1" style="padding: 10px;" class="group">
-        <div style="background: #fffdfd; position:absolute; top:0; bottom:0; right:0; left:0;"></div>
+    <div id="myModal" class="reveal-modal large">
             <div class="putty dottedHex">
-                <div class="six columns matchHeight">
+                <div class="four columns ">
                     <div class="hexCenter">
                         <div class="hex lefty">
                             <?php echo get_the_post_thumbnail( $postid, 'thumbnail', array( 'class' => 'aligncenter') ); ?>
@@ -67,19 +65,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="six columns matchHeight dottedBorder leftDots">
+                <div class="eight columns dottedBorder leftDots">
                 <h3 class="text-center"><span class="grandHotel"><?php echo $this_testifier; ?></span></h3>
                 <?php 
-                $content_post = get_post($testimonialid);
-                $content = $content_post->post_content;
-                $content = apply_filters('the_content', $content);
-                $content = str_replace(']]>', ']]&gt;', $content);
-                echo $content;
+                    $content_post = get_post($testimonialid);
+                    $content = $content_post->post_content;
+                    $content = apply_filters('the_content', $content);
+                    $content = str_replace(']]>', ']]&gt;', $content);
+                    echo $content;
                  ?>
                  </div>
             </div>
+            <a class="close-reveal-modal">&#215;</a>
         </div>
-    </div>
     <?php wp_reset_query(); ?>
     <!-- End Inline Flyout -->
     <!-- End Testimonial -->
