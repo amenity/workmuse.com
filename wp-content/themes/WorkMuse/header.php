@@ -58,7 +58,7 @@
 <script>
 (function($) {
 	$(function() {
-    $('.matchHeight').matchHeight();
+    	$('.matchHeight').matchHeight();
 });
 })(jQuery);
 </script>

@@ -33,13 +33,15 @@ get_header(); ?>
 								<div class="four columns matchHeight">
 								<div class="hexCenter">
 								<div class="hex">
-									 <?php if ( has_post_thumbnail() ) : ?>  
+									 <?php if ( has_post_thumbnail() ) : ?>
+									 	<a href="<?php the_field('video_link') ?>?rel=0" class="lbp_secondary" data-lightboxplus="<?php echo $post->ID; ?>">
 											<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'aligncenter') ); ?>						
 											<svg xml:space="preserve" viewBox="0 0 240 240">
 											  <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
 						l0.2,95.9c0,5.3-2.8,10.2-7.4,12.8l-82.7,47.7c-4.6,2.7-10.3,2.7-14.9,0l-83-48.1c-4.6-2.6-7.4-7.5-7.4-12.8l-0.1-95.9
 						c0-5.3,2.8-10.2,7.4-12.8l82.7-47.7C114.6,10,117.2,9.4,119.7,9.4z" />
 											</svg>
+											</a>
 											<?php endif; ?>
 								</div>
 								</div>
@@ -55,12 +57,14 @@ get_header(); ?>
 							<div class="hexCenter">
 							<div class="hex">
 								 <?php if ( has_post_thumbnail() ) : ?>  
-										<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'aligncenter') ); ?>						
-											<svg xml:space="preserve" viewBox="0 0 240 240">
-											  <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
-									l0.2,95.9c0,5.3-2.8,10.2-7.4,12.8l-82.7,47.7c-4.6,2.7-10.3,2.7-14.9,0l-83-48.1c-4.6-2.6-7.4-7.5-7.4-12.8l-0.1-95.9
-									c0-5.3,2.8-10.2,7.4-12.8l82.7-47.7C114.6,10,117.2,9.4,119.7,9.4z" />
-											</svg>
+										<a href="<?php the_field('video_link') ?>" class="lbp_secondary" data-lightboxplus="<?php echo $post->ID; ?>">
+											<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'aligncenter') ); ?>						
+												<svg xml:space="preserve" viewBox="0 0 240 240">
+												  <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
+										l0.2,95.9c0,5.3-2.8,10.2-7.4,12.8l-82.7,47.7c-4.6,2.7-10.3,2.7-14.9,0l-83-48.1c-4.6-2.6-7.4-7.5-7.4-12.8l-0.1-95.9
+										c0-5.3,2.8-10.2,7.4-12.8l82.7-47.7C114.6,10,117.2,9.4,119.7,9.4z" />
+												</svg>
+										</a>
 								<?php endif; ?>
 							</div>
 							</div>
