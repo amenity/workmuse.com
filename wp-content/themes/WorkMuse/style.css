@@ -691,6 +691,11 @@ aside#sidebar.page {
   }
 }
 
+#secondary a:focus {
+  outline: none;
+  cursor: pointer;
+}
+
 #secondary .hexImage {
   margin-bottom: -100%;
   margin-left: 1px;

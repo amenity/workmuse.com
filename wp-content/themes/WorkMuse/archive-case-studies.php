@@ -18,7 +18,7 @@ get_header(); ?>
 				$i = 1;
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 				query_posts( array(
-					'posts_per_page' => 4,
+					'posts_per_page' => 6,
 					'post_type' => 'case-studies',
 					'paged' => $paged,
 					) );
