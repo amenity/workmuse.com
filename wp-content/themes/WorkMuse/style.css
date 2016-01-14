@@ -115,7 +115,7 @@ span.amarillo {
 }
 
 .hexImage {
-  margin-bottom: -101%;
+  margin: 0 0 -101% 1px;
   width: 98%;
 }
 
@@ -621,6 +621,16 @@ ul.accordion>li.active .content {
   }
 }
 
+/*inline images */
+@media only screen and (max-width: 768px) {
+  .entry-content p img {
+      float: none;
+      margin: 0 auto;
+      /* width: 100%; */
+      display: block;
+  }
+} 
+
 /*Blog & Archive*/
 body.single-post #content {
   margin-top: 20px;
@@ -681,6 +691,11 @@ aside#sidebar.page {
   }
 }
 
+#secondary a:focus {
+  outline: none;
+  cursor: pointer;
+}
+
 #secondary .hexImage {
   margin-bottom: -100%;
   margin-left: 1px;
@@ -733,15 +748,6 @@ p.testifier {
 p.testifier:before {
   content: "-";
 }
-
-@media only screen and (max-width: 768px) {
-  .hexTestimonial p{
-    font-size: 1.5em;
-  }
-}
-
-/*Testimonial Lightbox */
-
 
 /*Dotted Hex Section */
 .dottedHex .leftDots, .dottedHex .rightDots {
