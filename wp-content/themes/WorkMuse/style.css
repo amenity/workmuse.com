@@ -115,7 +115,7 @@ span.amarillo {
 }
 
 .hexImage {
-  margin-bottom: -101%;
+  margin: 0 0 -101% 1px;
   width: 98%;
 }
 
