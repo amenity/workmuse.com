@@ -27,6 +27,14 @@
     });
 
 	});
-
-
+	$(window).load( function() {
+		
+	
+	$('body.post-type-archive-case-studies .matchHeight.four').each(function() {
+		var h = $(this).height();
+		var child = $(this).children('.centerIt');
+		var ch = child.height();
+		child.css('padding-top', (h-ch) / 2 );
+	})
+});
 })(jQuery);
