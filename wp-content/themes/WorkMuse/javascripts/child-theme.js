@@ -8,11 +8,7 @@
 	});
 	
 	//Center internal content
-	$('.innerFix').each(function() {
-		var iFh = $(this).height();
-		var ph = $(this).parent().height();
-		$(this).css('padding-top', (ph - iFh) / 2);
-	});
+
 
 	//Move the damn modal out of the sidebar
 	//Resize the shit when the content is visible
@@ -30,11 +26,16 @@
 	$(window).load( function() {
 		
 	
-	$('body.post-type-archive-case-studies .matchHeight.four').each(function() {
+	$('.centerIt').each(function() {
 		var h = $(this).height();
-		var child = $(this).children('.centerIt');
-		var ch = child.height();
-		child.css('padding-top', (h-ch) / 2 );
-	})
+		var parent = $(this).parents('.columns');
+		var ph = parent.height();
+		$(this).css('padding-top', (ph - h) / 2 );
+	});
+	$('.innerFix').each(function() {
+		var iFh = $(this).height();
+		var ph = $(this).parent().height();
+		$(this).css('padding-top', (ph - iFh) / 2);
+	});
 });
 })(jQuery);

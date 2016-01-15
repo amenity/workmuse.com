@@ -354,6 +354,7 @@ article ul li:before, .content ul li:before {
   -webkit-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   -o-border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
   border-image: url("http://workmuse.com/wp-content/themes/WorkMuse/images/dots.svg") 32% round;
+  border-style:solid;
 }
 
 .bottomDots , hr{
