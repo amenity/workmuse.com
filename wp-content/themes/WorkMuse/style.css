@@ -299,7 +299,6 @@ div#secondary {
   nav.top-bar ul>li:not(.name), nav.top-bar ul>li#menu-item-121 {width:100%; max-width:100%; text-align:center;}
   nav.top-bar.expanded ul.sub-menu {box-shadow:none; display:block; position:relative;}
   nav.top-bar.expanded ul.sub-menu li {display:block;}
-  #menu-item-216 a {margin-left: -2px;}
 }
 @media only screen and (min-width: 767px) and (max-width: 926px) {
   /*Finesse topbar-toggle vertical align*/
@@ -594,7 +593,7 @@ ul.accordion>li.active .content {
 .charcoal h3 {color:#8BCBCD;}
 .putty .svgMask {fill:#fffdfd;}
 .putty .hex, .charcoal .hex {position:relative;}
-.putty .hex svg, .charcoal .hex svg { position: absolute;top: -2px;right: 0;width: 101%; height:101%;}
+.putty .hex svg, .charcoal .hex svg { position: absolute;top: -4px;right: 0;width: 104%; height:104%;}
 .charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
 .putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
 .charcoal h3, .putty h3 {color:#f1c200;}
@@ -678,6 +677,17 @@ article .sd-content ul li:before {
   content: none;
 }
 
+/*Blog Sidebar*/
+h4.widget-title {
+  color: #FDD43A;
+  font-size: 1.3em;
+}
+
+aside#tag_cloud-2 {
+  margin-top: 30px;
+}
+
+
 /*Page sidebar*/
 aside#sidebar.page {
   background-color: #323131;
@@ -735,7 +745,7 @@ aside#sidebar.page {
 .hexTestimonial p{
   color: #FFFDFD;
   font-style: normal;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0 2.75em;
   text-align: center;
   z-index: 100;
@@ -908,7 +918,7 @@ ul.gform_fields {
 }
 
 .gform_body ul li label {
-  display: inline-block;
+  display: inline;
 }
 
 .gform_body {
@@ -917,4 +927,14 @@ ul.gform_fields {
 
 .gfield_required {
   color: #F15C38;
+}
+
+@media only screen and (max-width: 767px) {
+  input[type="submit"].gform_button.button {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .gform_body {
+    padding-right: 0;
+}
 }
