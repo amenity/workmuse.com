@@ -31,7 +31,7 @@ get_header(); ?>
 						<div class="post-box">
 							<?php if($i % 2 != 0) { ?>
 								<div class="four columns matchHeight">
-								<div class="hexCenter">
+								<div class="centerIt">
 								<div class="hex">
 									 <?php if ( has_post_thumbnail() ) : ?>
 									 	<a href="<?php the_field('video_link') ?>?rel=0" class="lbp_secondary" data-lightboxplus="<?php echo $post->ID; ?>">
@@ -54,7 +54,7 @@ get_header(); ?>
 							<?php } ?>
 							<?php if($i % 2 == 0) { ?>
 							<div class="four columns dottedBorder leftDots matchHeight">
-							<div class="hexCenter">
+							<div class="centerIt">
 							<div class="hex">
 								 <?php if ( has_post_thumbnail() ) : ?>  
 										<a href="<?php the_field('video_link') ?>?rel=0" class="lbp_secondary" data-lightboxplus="<?php echo $post->ID; ?>">
