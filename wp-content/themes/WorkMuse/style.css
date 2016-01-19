@@ -284,6 +284,9 @@ div#secondary {
 }
 
 
+.innerFix h3, .innerFix2 h3 {margin-top:0px; padding-top:12.5px;}
+.innerFix p:last-of-type, .innerFix2 p:last-of-type {margin-bottom:0px; padding-bottom:14px;}
+
 /*Only for Nav Resets*/
 @media only screen and (max-width: 926px) {
   #site-title {line-height: .5; margin-bottom: 0;}
@@ -434,6 +437,8 @@ ul.accordion>li.active .content {
 }
 
 @media only screen and (max-width: 768px) {
+  .reveal-modal .columns {height:auto !important;}
+  .reveal-modal .putty .hex svg {right:-3px;}
   .heroOverlay {
     top: 2rem;
     font-size: 70%;
@@ -778,15 +783,19 @@ p.testifier:before {
 }
 
 @media only screen and (min-width: 768px) {
+  
   .hex.lefty {
     margin: 0 10px 0 -35px;
+  }
+  #myModal .hex.lefty {
+    margin-left:-30px;
   }
   .hex.righty {
     margin: 0 -35px 0 0;
   }
   .putty .eight.columns.rightDots {
     padding-right: 27px;
-    margin-left: -60px
+    margin-left: -60px;
   }
 }
 
