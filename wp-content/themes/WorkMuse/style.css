@@ -799,6 +799,12 @@ p.testifier:before {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .hex.lefty {
+    margin-bottom: 20px;
+  }
+}
+
 /*Footer*/
 #footer {
   background-color: #323131;
