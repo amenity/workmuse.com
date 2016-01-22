@@ -595,6 +595,7 @@ ul.accordion>li.active .content {
 .charcoal {background-color:#323131; color:#fffdfd; padding:30px 0;}
 .charcoal .svgMask {fill:#323131;}
 .putty {background-color: #fffdfd; padding:30px 0;}
+.reveal-modal {background-color: #fffdfd;}
 .charcoal h3 {color:#8BCBCD;}
 .putty .svgMask {fill:#fffdfd;}
 .putty .hex, .charcoal .hex {position:relative;}

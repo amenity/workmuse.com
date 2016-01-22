@@ -52,7 +52,7 @@
     </div>
 <!-- Inline Flyout -->
     <div id="myModal" class="reveal-modal large">
-            <div class="putty dottedHex">
+            <div class="putty dottedHex group">
                 <div class="four columns ">
                     <div class="centerIt">
                         <div class="hex lefty">
