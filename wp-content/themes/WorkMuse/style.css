@@ -693,6 +693,21 @@ aside#tag_cloud-2 {
   margin-top: 30px;
 }
 
+span.sym, span.monthCount {
+  color: #FDD43A;
+} 
+
+span.sym {
+  margin-right: 8px;
+  font-size: 10px;
+}
+.collapsing {
+  list-style: none;
+}
+
+ul.collapsing {
+  margin-left: 0;
+}
 
 /*Page sidebar*/
 aside#sidebar.page {
