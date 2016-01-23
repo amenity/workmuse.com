@@ -11,7 +11,7 @@ get_header(); ?>
       <div class="post-box">
 
         <?php if ( have_posts() ) : ?>
-
+        <?php eyelikedesign_archive_title(); ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
           <div class="three columns hex">

@@ -52,11 +52,11 @@
     </div>
 <!-- Inline Flyout -->
     <div id="myModal" class="reveal-modal large">
-            <div class="putty dottedHex">
+            <div class="putty dottedHex group">
                 <div class="four columns ">
-                    <div class="hexCenter">
+                    <div class="centerIt">
                         <div class="hex lefty">
-                            <?php echo get_the_post_thumbnail( $postid, 'thumbnail', array( 'class' => 'aligncenter') ); ?>
+                            <?php echo get_the_post_thumbnail( $testimonialid, 'thumbnail', array( 'class' => 'aligncenter') ); ?>
                                                 <svg xml:space="preserve" viewBox="0 0 240 240">
                                                   <path class="svgMask" d="M0-1v242.8h241V-1H0z M119.7,9.4c2.6,0,5.1,0.6,7.4,1.9l83,48.1c4.6,2.6,7.4,7.5,7.4,12.8
                             l0.2,95.9c0,5.3-2.8,10.2-7.4,12.8l-82.7,47.7c-4.6,2.7-10.3,2.7-14.9,0l-83-48.1c-4.6-2.6-7.4-7.5-7.4-12.8l-0.1-95.9
@@ -66,7 +66,9 @@
                     </div>
                 </div>
                 <div class="eight columns dottedBorder leftDots">
+                <div class="innerFix2">
                 <h3 class="text-center"><span class="grandHotel"><?php echo $this_testifier; ?></span></h3>
+                
                 <?php 
                     $content_post = get_post($testimonialid);
                     $content = $content_post->post_content;
@@ -74,6 +76,7 @@
                     $content = str_replace(']]>', ']]&gt;', $content);
                     echo $content;
                  ?>
+                 </div>
                  </div>
             </div>
             <a class="close-reveal-modal">&#215;</a>
