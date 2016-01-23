@@ -451,59 +451,27 @@ if ( ! function_exists( 'eyelikedesign_archive_title' ) ) :
 remove_filter('term_description','wpautop');
 
 function eyelikedesign_archive_title () {
-	if ( is_category() ) {
-		$category_description = category_description();
-		echo $panelbool = ! empty( $category_description ) ? '<div class="panel clearfix">' : ''; ?>
+	if ( is_category() ) :?>
 			<header class="page-header">
-				<h3 class="page-title"><?php
-					printf( __( 'Category Archives: %s', 'eyelikedesign' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-				?></h3>
-				<?php
-					if ( ! empty( $category_description ) )
-						echo apply_filters( 'category_archive_meta', '<p class="category-archive-meta lead">' . $category_description . '</p>' );
-				?>
+				<h2 class="page-title"><?php
+					printf(single_cat_title( '', false ));
+				?></h2>
 			</header>
-		<?php echo $panelbool = ! empty( $category_description ) ? '</div>' : '';
-	}
-
-	if ( is_tag() ) {
-		$tag_description = tag_description();
-		echo $panelbool = ! empty( $tag_description ) ? '<div class="panel clearfix">' : ''; ?>
+	<?php elseif ( is_tag() ) : ?> 
 			<header class="page-header">
-				<h3 class="page-title"><?php
-						printf( __( 'Tag Archives: %s', 'eyelikedesign' ), '<span>' . single_tag_title( '', false ) . '</span>' );
-				?></h3>
-				<?php
-					if ( ! empty( $tag_description ) )
-						echo apply_filters( 'tag_archive_meta', '<p class="lead tag-archive-meta">' . $tag_description . '</p>' );
-					?>
+				<h2 class="page-title"><?php
+						printf(single_tag_title( '', false ));
+				?></h2>
 			</header>
-		<?php echo $panelbool = ! empty( $tag_description ) ? '</div>' : '';
-	}
-
-	if ( is_author() ) {
-		// If a user has filled out their description, show a bio on their entries.
-		if ( get_the_author_meta( 'description' ) ) : ?>
+	<?php elseif ( is_author() ) :?>
 		<header class="page-header">
-			<div id="author-info" class="panel clearfix">
-				<h3 class="page-title author"><?php printf( __( 'Author Archives: %s', 'eyelikedesign' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h3>
-				<div id="author-avatar">
-					<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'eyelikedesign_author_bio_avatar_size', 72 ) ); ?>
-				</div><!-- #author-avatar -->
-				<div id="author-description">
-					<h4><?php printf( __( 'About %s', 'eyelikedesign' ), get_the_author() ); ?></h4>
-					<p class="lead"><?php the_author_meta( 'description' ); ?></p>
-				</div><!-- #author-description	-->
-			</div><!-- #entry-author-info -->
-		<?php else : ?>
-		<header class="page-header">
-			<h3 class="page-title author"><?php printf( __( 'Author Archives: %s', 'eyelikedesign' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h3>
+			<h2 class="page-title author"><?php printf( __( 'Author Archives: %s', 'eyelikedesign' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?></h2>
 		</header>
-		<?php endif;
-	}
+	<?php endif; ?>
+	<?php
 	if ( is_archive() && !is_category() && !is_tag() ) { ?>
 		<header class="page-header">
-			<h3 class="page-title">
+			<h2 class="page-title">
 				<?php if ( is_day() ) : ?>
 					<?php printf( __( 'Daily Archives: %s', 'eyelikedesign' ), '<span>' . get_the_date() . '</span>' ); ?>
 				<?php elseif ( is_month() ) : ?>
@@ -513,7 +481,7 @@ function eyelikedesign_archive_title () {
 				<?php elseif ( ! is_author() && ! is_category() && ! is_tag() ) : ?>
 					<?php _e( 'Blog Archives', 'eyelikedesign' ); ?>
 				<?php endif; ?>
-			</h3>
+			</h2>
 		</header><?php
 	}
 	if ( is_search() ) {
