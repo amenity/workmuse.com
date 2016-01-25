@@ -599,7 +599,7 @@ ul.accordion>li.active .content {
 .charcoal h3 {color:#8BCBCD;}
 .putty .svgMask {fill:#fffdfd;}
 .putty .hex, .charcoal .hex {position:relative;}
-.putty .hex svg, .charcoal .hex svg { position: absolute;top: -4px;right: 0;width: 104%; height:104%;}
+.putty .hex svg, .charcoal .hex svg { position: absolute;top: -4px;right: -2px;width: 104%; height:104%;}
 .charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
 .putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
 .charcoal h3, .putty h3 {color:#f1c200;}
@@ -749,6 +749,10 @@ aside#sidebar.page {
 .svgOutline {
   fill: #323131;
   transition: all .3s ease; 
+}
+
+#myModal .svgWindow, #myModal .svgOutline {
+  fill: none;
 }
 
 #secondary .svgWindow:hover {
