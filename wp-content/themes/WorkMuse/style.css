@@ -737,6 +737,28 @@ aside#sidebar.page {
   fill: #323131;
 }
 
+#secondary .hex-image {
+  margin-bottom: -100.3%;
+  width: 99%;
+}
+#secondary .svgWindow {
+  fill:none;
+  pointer-events: all;
+}
+
+.svgOutline {
+  fill: #F8F6EC;
+  transition: all .3s ease; 
+}
+
+#secondary .svgWindow:hover {
+  cursor: pointer;
+}
+
+#secondary .svgWindow:hover ~ .svgOutline {
+  fill: #8BCBCD;
+}
+
 .hexSide:first-child {
   padding-bottom: 1.25em;
 }
@@ -751,7 +773,8 @@ aside#sidebar.page {
 }
 
 .hexMotif {
-  margin: 10%;
+  margin: 7% 7% -100%;
+  width: 86%;
   z-index: -100;
 }
 
