@@ -723,12 +723,12 @@ aside#sidebar.page {
   }
 }
 
-#secondary a:focus {
+#secondary a:focus, .post-type-archive-case-studies a:focus {
   outline: none;
   cursor: pointer;
 }
 
-#secondary .hexImage {
+#secondary .hexImage, .post-type-archive-case-studies .hexImage {
   margin-bottom: -100%;
   margin-left: 1px;
 }
@@ -737,11 +737,11 @@ aside#sidebar.page {
   fill: #323131;
 }
 
-#secondary .hex-image {
+#secondary .hex-image, .post-type-archive-case-studies .hex-image {
   margin-bottom: -100.3%;
   width: 99%;
 }
-#secondary .svgWindow {
+#secondary .svgWindow, .post-type-archive-case-studies .svgWindow {
   fill:none;
   pointer-events: all;
 }
@@ -751,15 +751,19 @@ aside#sidebar.page {
   transition: all .3s ease; 
 }
 
+.putty .svgOutline {
+  fill: #fffdfd;
+}
+
 #myModal .svgWindow, #myModal .svgOutline {
   fill: none;
 }
 
-#secondary .svgWindow:hover {
+#secondary .svgWindow:hover, .post-type-archive-case-studies .svgWindow:hover {
   cursor: pointer;
 }
 
-#secondary .svgWindow:hover ~ .svgOutline {
+#secondary .svgWindow:hover ~ .svgOutline, .post-type-archive-case-studies .svgWindow:hover ~ .svgOutline {
   fill: #8BCBCD;
 }
 
