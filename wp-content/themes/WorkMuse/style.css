@@ -709,6 +709,11 @@ ul.collapsing {
   margin-left: 0;
 }
 
+li.collapsing.archives.item {
+  margin-left: 15px;
+  text-indent: -15px;
+}
+
 /*Page sidebar*/
 aside#sidebar.page {
   background-color: #323131;
