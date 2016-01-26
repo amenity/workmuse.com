@@ -6,7 +6,7 @@
 		var h = $(this).height();
 		$(this).parent('.columns').css('height', h).siblings('.columns').css('height', h);
 	});
-	
+
 	//Center internal content
 
 
@@ -34,7 +34,7 @@
 		var h = $(this).outerHeight();
 		var parent = $(this).parents('.columns');
 		var ph = parent.outerHeight();
-		console.log("CenterIt: Element Height:" + h + ' Parent Height: ' + ph  + 'Final Padding: ' + (ph-h)/2);
+		//console.log("CenterIt: Element Height:" + h + ' Parent Height: ' + ph  + 'Final Padding: ' + (ph-h)/2);
 		$(this).css('padding-top', (ph - h) / 2 );
 	});
 	$('.innerFix').each(function() {
