@@ -599,7 +599,7 @@ ul.accordion>li.active .content {
 .charcoal h3 {color:#8BCBCD;}
 .putty .svgMask {fill:#fffdfd;}
 .putty .hex, .charcoal .hex {position:relative;}
-.putty .hex svg, .charcoal .hex svg { position: absolute;top: -4px;right: 0;width: 104%; height:104%;}
+.putty .hex svg, .charcoal .hex svg { position: absolute;top: -4px;right: -2px;width: 104%; height:104%;}
 .charcoal span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #8BCBCD;}
 .putty span.grandHotel {font-family:"Grand Hotel"; font-weight:normal; font-size:150%; color: #f15c38;}
 .charcoal h3, .putty h3 {color:#f1c200;}
@@ -709,6 +709,11 @@ ul.collapsing {
   margin-left: 0;
 }
 
+li.collapsing.archives.item {
+  margin-left: 15px;
+  text-indent: -15px;
+}
+
 /*Page sidebar*/
 aside#sidebar.page {
   background-color: #323131;
@@ -723,12 +728,12 @@ aside#sidebar.page {
   }
 }
 
-#secondary a:focus {
+#secondary a:focus, .post-type-archive-case-studies a:focus {
   outline: none;
   cursor: pointer;
 }
 
-#secondary .hexImage {
+#secondary .hexImage, .post-type-archive-case-studies .hexImage {
   margin-bottom: -100%;
   margin-left: 1px;
 }
@@ -737,27 +742,37 @@ aside#sidebar.page {
   fill: #323131;
 }
 
-#secondary .hex-image {
+#secondary .hex-image, .post-type-archive-case-studies .hex-image {
   margin-bottom: -100.3%;
   width: 99%;
 }
-#secondary .svgWindow {
+#secondary .svgWindow, .post-type-archive-case-studies .svgWindow {
   fill:none;
   pointer-events: all;
 }
 
 .svgOutline {
-  fill: #F8F6EC;
+  fill: #323131;
   transition: all .3s ease; 
 }
 
-#secondary .svgWindow:hover {
+.putty .svgOutline {
+  fill: #fffdfd;
+}
+
+#myModal .svgWindow, #myModal .svgOutline {
+  fill: none;
+}
+
+#secondary .svgWindow:hover, .post-type-archive-case-studies .svgWindow:hover {
   cursor: pointer;
 }
 
-#secondary .svgWindow:hover ~ .svgOutline {
+#secondary .svgWindow:hover ~ .svgOutline, .post-type-archive-case-studies .svgWindow:hover ~ .svgOutline, .svgOutline.blue {
   fill: #8BCBCD;
 }
+
+
 
 .hexSide:first-child {
   padding-bottom: 1.25em;
@@ -784,6 +799,10 @@ aside#sidebar.page {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.hexTestimonial:hover {
+  pointer-events : none;
 }
 
 .hexTestimonial p{
