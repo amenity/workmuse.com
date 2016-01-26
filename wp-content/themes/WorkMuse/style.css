@@ -768,9 +768,11 @@ aside#sidebar.page {
   cursor: pointer;
 }
 
-#secondary .svgWindow:hover ~ .svgOutline, .post-type-archive-case-studies .svgWindow:hover ~ .svgOutline {
+#secondary .svgWindow:hover ~ .svgOutline, .post-type-archive-case-studies .svgWindow:hover ~ .svgOutline, .svgOutline.blue {
   fill: #8BCBCD;
 }
+
+
 
 .hexSide:first-child {
   padding-bottom: 1.25em;
@@ -797,6 +799,10 @@ aside#sidebar.page {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.hexTestimonial:hover {
+  pointer-events : none;
 }
 
 .hexTestimonial p{
