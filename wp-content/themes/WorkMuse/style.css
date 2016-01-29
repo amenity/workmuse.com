@@ -39,8 +39,12 @@ h1, h2.entry-title  {
   color: #8BCBCD;
   font-size: 4.8rem; 
 }
+.button:focus{ background: #8BCBCD;}
+a:focus, a:active {color:#8BCBCD;}
+
 
 @media only screen and (min-width: 768px) {
+
   h1, h2.entry-title  {
     font-size: 5.2rem; 
   } 
@@ -483,25 +487,25 @@ ul.accordion>li.active .content {
 }
 
 .section:before, .definition:before {
-  border-left: 9999px solid #323131;
-  box-shadow: 9999px 0 0 #323131;
+  border-left: 9900px solid #323131;
+  box-shadow: 9900px 0 0 #323131;
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -9999px;
+  left: -9900px;
   right: 0;
   display: block; /* Prevent Foundation .column 'table' on mobile. */
 }
 
 .section:before {
-  border-left: 9999px solid #323131;
-  box-shadow: 9999px 0 0 #323131;
+  border-left: 9900px solid #323131;
+  box-shadow: 9900px 0 0 #323131;
 }
 
 .definition:before{
-  border-left: 9999px solid #8BCBCD;
-  box-shadow: 9999px 0 0 #8BCBCD;
+  border-left: 9900px solid #8BCBCD;
+  box-shadow: 9900px 0 0 #8BCBCD;
 }
 .sectionImg {
   text-align: center;
@@ -768,7 +772,7 @@ aside#sidebar.page {
   cursor: pointer;
 }
 
-#secondary .svgWindow:hover ~ .svgOutline, .post-type-archive-case-studies .svgWindow:hover ~ .svgOutline, .svgOutline.blue {
+#secondary .svgWindow:hover ~ .svgOutline, .post-type-archive-case-studies .svgWindow:hover ~ .svgOutline, .svgOutline.blue, .modalReveal:hover .svgOutline {
   fill: #8BCBCD;
 }
 
@@ -799,10 +803,10 @@ aside#sidebar.page {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index:1;
 }
 
 .hexTestimonial:hover {
-  pointer-events : none;
 }
 
 .hexTestimonial p{
@@ -811,9 +815,10 @@ aside#sidebar.page {
   font-size: 1em;
   margin: 0 2.75em;
   text-align: center;
-  z-index: 100;
+  z-index:-1;
+  position: relative;
 }
-
+a.modalReveal {z-index:30; position:relative; display:block;}
 p.testifier {
   font-style: italic;
   margin-top: 0;
@@ -858,6 +863,8 @@ p.testifier:before {
 }
 
 @media only screen and (max-width: 768px) {
+
+  a.modalReveal .svgOutline, a.modalReveal .svgWindow {display:none;}
   .hex.lefty {
     margin-bottom: 20px;
   }

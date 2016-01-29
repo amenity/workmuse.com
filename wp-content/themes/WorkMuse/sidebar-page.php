@@ -66,6 +66,7 @@
             c5.812-3.285,12.382-4.802,18.699-4.802c6.57,0,12.887,1.517,18.7,4.802l209.728,121.541c11.625,6.57,18.7,18.951,18.7,32.344
             l0.504,242.327C552.872,529.935,545.798,542.316,534.173,548.887z"/>
         </svg>
+        
         <div class="hexTestimonial">
             <?php
                 global $wp_query;
@@ -77,7 +78,6 @@
                 
             ?>
         </div>
-
         </a>
     </div>
 <!-- Inline Flyout -->
@@ -139,7 +139,7 @@
             $video = get_field('video', $sidebarlinkid);
 
         ?>      
-        <a href="<?php echo $link ?>" <?php if($video ) {echo 'class="lbp_secondary"';} else {echo 'class="lbp_primary"';} ?> data-lightboxplus="otherlink">
+        <a href="<?php echo $link; if($video) {echo '?rel=0';} ?>" <?php if($video ) {echo 'class="lbp_secondary"';} else {echo 'class="lbp_primary"';} ?> data-lightboxplus="otherlink">
             <img src="<?php echo $img[0]; ?>" class="hexImage" />
             <svg xml:space="preserve" viewBox="0 87.45 614.55 619.14">
               <path class="svgMask" d="M0,87.45v619.14h614.55V87.45H0z M305.235,113.97c6.63,0,13.005,1.53,18.871,4.845L535.755,241.47
