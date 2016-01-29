@@ -487,25 +487,25 @@ ul.accordion>li.active .content {
 }
 
 .section:before, .definition:before {
-  border-left: 9999px solid #323131;
-  box-shadow: 9999px 0 0 #323131;
+  border-left: 9900px solid #323131;
+  box-shadow: 9900px 0 0 #323131;
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -9999px;
+  left: -9900px;
   right: 0;
   display: block; /* Prevent Foundation .column 'table' on mobile. */
 }
 
 .section:before {
-  border-left: 9999px solid #323131;
-  box-shadow: 9999px 0 0 #323131;
+  border-left: 9900px solid #323131;
+  box-shadow: 9900px 0 0 #323131;
 }
 
 .definition:before{
-  border-left: 9999px solid #8BCBCD;
-  box-shadow: 9999px 0 0 #8BCBCD;
+  border-left: 9900px solid #8BCBCD;
+  box-shadow: 9900px 0 0 #8BCBCD;
 }
 .sectionImg {
   text-align: center;
